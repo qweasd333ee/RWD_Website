@@ -29,27 +29,62 @@ body {
 #navbar .navbarMenu a{
   text-decoration: none;
   color: rgb(130, 105, 106);
-  padding: 15px;
 }
 
 #firstPage {
+  padding: 60px 0 60px 0;
   width: 100%;
-  height: 100%;
-  background: url('../images/bg-1.jpeg');
+  height: 50%;
+  background: rgba(0, 0, 0, 0.3)url('../images/bg-1.jpeg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-blend-mode: darken;
+  /* background-attachment: fixed; */
   color: white;
 }
 
 #firstPage .firstPageText {
-  width: 100%;
+  width: clac(100% - 40px);
   height: 100%;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
+}
+
+#firstPage .firstPageText .text-1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+#firstPage .firstPageText .text-2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+#firstPage .firstPageText .text-3 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+#firstPage .firstPageText .text-4 {
+  width: 130px;
+  border-top: 2px solid white;
+}
+#firstPage .firstPageText .text-5 {
+  font-size:0.875rem;
+  color: white;
+  text-decoration: none;
+  margin-top: 3rem;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  transition: all .3s;
+}
+#firstPage .firstPageText .text-5:hover {
+  background: white;
+  color: black;
 }
 
 #secondPage {
@@ -62,7 +97,7 @@ body {
 
 #secondPage .secPageText {
   width: 100%;
-  height: 40%;
+  height: 50%;
   padding: 30px 20px 40px 20px;
   display: flex;
   flex-direction: column;
@@ -72,7 +107,7 @@ body {
 
 #secondPage .secPagePic {
   width: 100%;
-  height: 60%;
+  height: 50%;
   display: flex;
 }
 #secondPage .secPagePic .row {
