@@ -1,9 +1,9 @@
 body {
   width: 100%;
-  height: 100vh;
   #container {
     width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
     #navbar {
       width: 100%;
       padding: 5px;
@@ -19,7 +19,7 @@ body {
         font-weight: 600;
         color: rgb(87, 73, 74);
         padding: 20px 5px;
-        font-family: "Quintessential", Sans-serif;
+        font-family: 'Quintessential', Sans-serif;
       }
       .navbarMenu {
         a {
@@ -30,8 +30,9 @@ body {
     }
     #firstPage {
       width: 100%;
-      height: 65%;
+      height: 60%;
       padding: 60px 0 60px 0;
+      display: flex;
       background: rgba(0, 0, 0, 0.35) url('../images/bg-1.jpeg');
       background-position: center center;
       background-repeat: no-repeat;
@@ -41,14 +42,9 @@ body {
       color: white;
       .firstPageText {
         width: 100%;
-        height: 100%;
-        display: flex;
         text-align: center;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         padding: 20px;
-        font-family: "Oswald", Sans-serif;
+        font-family: 'Oswald', Sans-serif;
         .text-1 {
           font-size: 4rem;
           margin-top: 1rem;
@@ -77,7 +73,7 @@ body {
           border: 1px solid white;
           padding: 1rem 2rem;
           transition: all 0.3s;
-          font-family: "Karla", Sans-serif;
+          font-family: 'Karla', Sans-serif;
           &:hover {
             background: white;
             color: black;
@@ -87,9 +83,10 @@ body {
     }
     #secondPage {
       width: 100%;
-      height: 100%;
       background: rgba(255, 255, 255);
       display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
       flex-wrap: wrap;
       .secPageText {
         width: 100%;
@@ -103,19 +100,19 @@ body {
         .text-1 {
           color: rgb(189, 183, 107);
           margin-bottom: 20px;
-          font-family: "Karla", Sans-serif;
+          font-family: 'Karla', Sans-serif;
         }
         .text-2 {
           color: #404040;
           font-size: 2rem;
           margin-bottom: 20px;
-          font-family: "Oswald", Sans-serif;
+          font-family: 'Oswald', Sans-serif;
         }
         .text-3,
         .text-4 {
           color: #9d9d9d;
           margin-bottom: 20px;
-          font-family: "Karla", Sans-serif;
+          font-family: 'Karla', Sans-serif;
           font-size: 0.9rem;
         }
         .text-5 {
@@ -126,11 +123,11 @@ body {
           color: white;
           background: rgb(189, 183, 107);
           padding: 0.8rem 1.2rem;
-          transition: all .3s;
-          font-family: "Karla", Sans-serif;
+          transition: all 0.3s;
+          font-family: 'Karla', Sans-serif;
           letter-spacing: 2px;
           &:hover {
-            background: rgb(189,183,107,0.53);
+            background: rgb(189, 183, 107, 0.53);
           }
         }
       }
@@ -140,9 +137,7 @@ body {
         display: flex;
         .row {
           width: 50%;
-          height: 60%;
-          display: flex;
-          flex-direction: column;
+          height: 100%;
         }
         img {
           object-fit: cover;
@@ -155,7 +150,6 @@ body {
     }
     #thirdPage {
       width: 100%;
-      height: 100%;
       background: #f5f2f0;
       display: flex;
       flex-wrap: wrap;
@@ -171,19 +165,19 @@ body {
         .text-1 {
           color: rgb(189, 183, 107);
           margin-bottom: 20px;
-          font-family: "Karla", Sans-serif;
+          font-family: 'Karla', Sans-serif;
         }
         .text-2 {
           color: #404040;
           font-size: 2rem;
           margin-bottom: 20px;
-          font-family: "Oswald", Sans-serif;
+          font-family: 'Oswald', Sans-serif;
         }
         .text-3,
         .text-4 {
           color: #9d9d9d;
           margin-bottom: 20px;
-          font-family: "Karla", Sans-serif;
+          font-family: 'Karla', Sans-serif;
           font-size: 0.9rem;
         }
         .text-5 {
@@ -194,29 +188,30 @@ body {
           color: white;
           background: rgb(189, 183, 107);
           padding: 0.8rem 1.2rem;
-          transition: all .3s;
-          font-family: "Karla", Sans-serif;
+          transition: all 0.3s;
+          font-family: 'Karla', Sans-serif;
           letter-spacing: 2px;
           &:hover {
-            background: rgb(189,183,107,0.53);
+            background: rgb(189, 183, 107, 0.53);
           }
         }
       }
       .thirdPagePic {
         width: 100%;
         height: 50%;
-        display: flex;
       }
       img {
+        object-fit: cover;
+        display: block;
         width: 100%;
         height: 100%;
       }
     }
     #forthPage {
       width: 100%;
-      height: 65%;
+      height: 40%;
       padding: 60px 0 60px 0;
-      background: rgba(0, 0, 0, 0.35) url('../images/bg-2.jpg');
+      background: rgba(0, 0, 0, 0.25) url('../images/bg-2.jpg');
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -232,15 +227,16 @@ body {
         align-items: center;
         flex-direction: column;
         padding: 20px;
-        font-family: "Oswald", Sans-serif;
+        font-family: 'Oswald', Sans-serif;
         .text-1 {
-          font-size: 4rem;
+          font-size: 2rem;
           margin-top: 1rem;
         }
         .text-2 {
-          font-size: 1.5rem;
+          font-size: 1rem;
           margin-top: 1rem;
           font-weight: 400;
+          font-family: 'Karla', Sans-serif;
         }
         .text-3 {
           font-size: 0.875rem;
@@ -250,12 +246,45 @@ body {
           border: 1px solid white;
           padding: 1rem 2rem;
           transition: all 0.3s;
-          font-family: "Karla", Sans-serif;
+          font-family: 'Karla', Sans-serif;
           &:hover {
             background: white;
             color: black;
           }
         }
+      }
+    }
+    #fivePage {
+      width: 100%;
+      background: #ffffff;
+      display: flex;
+      flex-wrap: wrap;
+      .fivePageText {
+        width: 100%;
+        padding: 30px 20px 40px 20px;
+        text-align: left;
+        .text-1 {
+          color: #404040;
+          font-size: 2.2rem;
+          font-family: 'Oswald', Sans-serif;
+          border-left: solid 8px #9ccc65;
+          padding: 0 0 0 22px;
+          margin: 0 0 20px -20px;
+        }
+        .text-2 {
+          color: #7a7a7a;
+          font-size: 1rem;
+          margin-bottom: 20px;
+          font-family: 'Karla', Sans-serif;
+        }
+      }
+      .fivePagePic {
+        width: 100%;
+        height: 200px;
+        background: url('../images/pic-6.jpeg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
     }
   }
