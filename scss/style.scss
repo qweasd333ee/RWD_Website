@@ -1,0 +1,262 @@
+body {
+  width: 100%;
+  height: 100vh;
+  #container {
+    width: 100%;
+    height: 100%;
+    #navbar {
+      width: 100%;
+      padding: 5px;
+      height: 70px;
+      position: fixed;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: rgba(255, 255, 255);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      .navbarTitle {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: rgb(87, 73, 74);
+        padding: 20px 5px;
+        font-family: "Quintessential", Sans-serif;
+      }
+      .navbarMenu {
+        a {
+          text-decoration: none;
+          color: rgb(130, 105, 106);
+        }
+      }
+    }
+    #firstPage {
+      width: 100%;
+      height: 65%;
+      padding: 60px 0 60px 0;
+      background: rgba(0, 0, 0, 0.35) url('../images/bg-1.jpeg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: darken;
+      /* background-attachment: fixed; */
+      color: white;
+      .firstPageText {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        font-family: "Oswald", Sans-serif;
+        .text-1 {
+          font-size: 4rem;
+          margin-top: 1rem;
+        }
+        .text-2 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          font-weight: 400;
+        }
+        .text-3 {
+          font-size: 1rem;
+          margin-top: 1rem;
+          padding-bottom: 1rem;
+          font-weight: 600;
+          letter-spacing: 3px;
+        }
+        .text-4 {
+          width: 130px;
+          border-top: 2px solid white;
+        }
+        .text-5 {
+          font-size: 0.875rem;
+          color: white;
+          text-decoration: none;
+          margin-top: 3rem;
+          border: 1px solid white;
+          padding: 1rem 2rem;
+          transition: all 0.3s;
+          font-family: "Karla", Sans-serif;
+          &:hover {
+            background: white;
+            color: black;
+          }
+        }
+      }
+    }
+    #secondPage {
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255);
+      display: flex;
+      flex-wrap: wrap;
+      .secPageText {
+        width: 100%;
+        height: 50%;
+        padding: 30px 20px 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .text-1 {
+          color: rgb(189, 183, 107);
+          margin-bottom: 20px;
+          font-family: "Karla", Sans-serif;
+        }
+        .text-2 {
+          color: #404040;
+          font-size: 2rem;
+          margin-bottom: 20px;
+          font-family: "Oswald", Sans-serif;
+        }
+        .text-3,
+        .text-4 {
+          color: #9d9d9d;
+          margin-bottom: 20px;
+          font-family: "Karla", Sans-serif;
+          font-size: 0.9rem;
+        }
+        .text-5 {
+          width: 80%;
+          font-size: 0.875rem;
+          font-weight: 500;
+          text-decoration: none;
+          color: white;
+          background: rgb(189, 183, 107);
+          padding: 0.8rem 1.2rem;
+          transition: all .3s;
+          font-family: "Karla", Sans-serif;
+          letter-spacing: 2px;
+          &:hover {
+            background: rgb(189,183,107,0.53);
+          }
+        }
+      }
+      .secPagePic {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        .row {
+          width: 50%;
+          height: 60%;
+          display: flex;
+          flex-direction: column;
+        }
+        img {
+          object-fit: cover;
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 2px;
+        }
+      }
+    }
+    #thirdPage {
+      width: 100%;
+      height: 100%;
+      background: #f5f2f0;
+      display: flex;
+      flex-wrap: wrap;
+      .thirdPageText {
+        width: 100%;
+        height: 50%;
+        padding: 30px 20px 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .text-1 {
+          color: rgb(189, 183, 107);
+          margin-bottom: 20px;
+          font-family: "Karla", Sans-serif;
+        }
+        .text-2 {
+          color: #404040;
+          font-size: 2rem;
+          margin-bottom: 20px;
+          font-family: "Oswald", Sans-serif;
+        }
+        .text-3,
+        .text-4 {
+          color: #9d9d9d;
+          margin-bottom: 20px;
+          font-family: "Karla", Sans-serif;
+          font-size: 0.9rem;
+        }
+        .text-5 {
+          width: 80%;
+          font-size: 0.875rem;
+          font-weight: 500;
+          text-decoration: none;
+          color: white;
+          background: rgb(189, 183, 107);
+          padding: 0.8rem 1.2rem;
+          transition: all .3s;
+          font-family: "Karla", Sans-serif;
+          letter-spacing: 2px;
+          &:hover {
+            background: rgb(189,183,107,0.53);
+          }
+        }
+      }
+      .thirdPagePic {
+        width: 100%;
+        height: 50%;
+        display: flex;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    #forthPage {
+      width: 100%;
+      height: 65%;
+      padding: 60px 0 60px 0;
+      background: rgba(0, 0, 0, 0.35) url('../images/bg-2.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: darken;
+      /* background-attachment: fixed; */
+      color: white;
+      .forthPageText {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        font-family: "Oswald", Sans-serif;
+        .text-1 {
+          font-size: 4rem;
+          margin-top: 1rem;
+        }
+        .text-2 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          font-weight: 400;
+        }
+        .text-3 {
+          font-size: 0.875rem;
+          color: white;
+          text-decoration: none;
+          margin-top: 3rem;
+          border: 1px solid white;
+          padding: 1rem 2rem;
+          transition: all 0.3s;
+          font-family: "Karla", Sans-serif;
+          &:hover {
+            background: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

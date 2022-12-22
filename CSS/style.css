@@ -2,40 +2,43 @@ body {
   width: 100%;
   height: 100vh;
 }
-
-#container {
+body #container {
   width: 100%;
   height: 100%;
 }
-
-#navbar {
+body #container #navbar {
   width: 100%;
   padding: 5px;
-  height: 65px;
+  height: 70px;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: rgba(255, 255, 255);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
-
-#navbar .navbarTitle {
-  font-size: 2rem;
+body #container #navbar .navbarTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
   color: rgb(87, 73, 74);
   padding: 20px 5px;
+  font-family: "Quintessential", Sans-serif;
 }
-
-#navbar .navbarMenu a{
+body #container #navbar .navbarMenu a {
   text-decoration: none;
   color: rgb(130, 105, 106);
 }
-
-#firstPage {
-  padding: 60px 0 60px 0;
+body #container #firstPage {
   width: 100%;
-  height: 50%;
-  background: rgba(0, 0, 0, 0.3)url('../images/bg-1.jpeg');
+  height: 65%;
+  padding: 60px 0 60px 0;
+  background: rgba(0, 0, 0, 0.35) url("../images/bg-1.jpeg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,108 +46,277 @@ body {
   /* background-attachment: fixed; */
   color: white;
 }
-
-#firstPage .firstPageText {
-  width: clac(100% - 40px);
+body #container #firstPage .firstPageText {
+  width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 20px;
+  font-family: "Oswald", Sans-serif;
 }
-
-#firstPage .firstPageText .text-1 {
+body #container #firstPage .firstPageText .text-1 {
   font-size: 4rem;
   margin-top: 1rem;
 }
-
-#firstPage .firstPageText .text-2 {
+body #container #firstPage .firstPageText .text-2 {
   font-size: 1.5rem;
   margin-top: 1rem;
+  font-weight: 400;
 }
-#firstPage .firstPageText .text-3 {
+body #container #firstPage .firstPageText .text-3 {
   font-size: 1rem;
   margin-top: 1rem;
   padding-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
-#firstPage .firstPageText .text-4 {
+body #container #firstPage .firstPageText .text-4 {
   width: 130px;
   border-top: 2px solid white;
 }
-#firstPage .firstPageText .text-5 {
-  font-size:0.875rem;
+body #container #firstPage .firstPageText .text-5 {
+  font-size: 0.875rem;
   color: white;
   text-decoration: none;
   margin-top: 3rem;
   border: 1px solid white;
   padding: 1rem 2rem;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: "Karla", Sans-serif;
 }
-#firstPage .firstPageText .text-5:hover {
+body #container #firstPage .firstPageText .text-5:hover {
   background: white;
   color: black;
 }
-
-#secondPage {
+body #container #secondPage {
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255);
+  background: rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-
-#secondPage .secPageText {
+body #container #secondPage .secPageText {
   width: 100%;
   height: 50%;
   padding: 30px 20px 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
-
-#secondPage .secPagePic {
+body #container #secondPage .secPageText .text-1 {
+  color: rgb(189, 183, 107);
+  margin-bottom: 20px;
+  font-family: "Karla", Sans-serif;
+}
+body #container #secondPage .secPageText .text-2 {
+  color: #404040;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Oswald", Sans-serif;
+}
+body #container #secondPage .secPageText .text-3,
+body #container #secondPage .secPageText .text-4 {
+  color: #9d9d9d;
+  margin-bottom: 20px;
+  font-family: "Karla", Sans-serif;
+  font-size: 0.9rem;
+}
+body #container #secondPage .secPageText .text-5 {
+  width: 80%;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  background: rgb(189, 183, 107);
+  padding: 0.8rem 1.2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: "Karla", Sans-serif;
+  letter-spacing: 2px;
+}
+body #container #secondPage .secPageText .text-5:hover {
+  background: rgba(189, 183, 107, 0.53);
+}
+body #container #secondPage .secPagePic {
   width: 100%;
   height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
-#secondPage .secPagePic .row {
+body #container #secondPage .secPagePic .row {
   width: 50%;
   height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-
-#secondPage .secPagePic img {
-  width: 100%;
-}
-
-#thirdPage {
+body #container #secondPage .secPagePic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 2px;
 }
-
-#thirdPage .thirdPageText {
+body #container #thirdPage {
+  width: 100%;
+  height: 100%;
+  background: #f5f2f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body #container #thirdPage .thirdPageText {
   width: 100%;
   height: 50%;
   padding: 30px 20px 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
-
-#thirdPage .thirdPagePic {
+body #container #thirdPage .thirdPageText .text-1 {
+  color: rgb(189, 183, 107);
+  margin-bottom: 20px;
+  font-family: "Karla", Sans-serif;
+}
+body #container #thirdPage .thirdPageText .text-2 {
+  color: #404040;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Oswald", Sans-serif;
+}
+body #container #thirdPage .thirdPageText .text-3,
+body #container #thirdPage .thirdPageText .text-4 {
+  color: #9d9d9d;
+  margin-bottom: 20px;
+  font-family: "Karla", Sans-serif;
+  font-size: 0.9rem;
+}
+body #container #thirdPage .thirdPageText .text-5 {
+  width: 80%;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  background: rgb(189, 183, 107);
+  padding: 0.8rem 1.2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: "Karla", Sans-serif;
+  letter-spacing: 2px;
+}
+body #container #thirdPage .thirdPageText .text-5:hover {
+  background: rgba(189, 183, 107, 0.53);
+}
+body #container #thirdPage .thirdPagePic {
   width: 100%;
   height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
-
-#thirdPage .thirdPagePic img {
+body #container #thirdPage img {
   width: 100%;
   height: 100%;
+}
+body #container #forthPage {
+  width: 100%;
+  height: 65%;
+  padding: 60px 0 60px 0;
+  background: rgba(0, 0, 0, 0.35) url("../images/bg-2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  /* background-attachment: fixed; */
+  color: white;
+}
+body #container #forthPage .forthPageText {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  font-family: "Oswald", Sans-serif;
+}
+body #container #forthPage .forthPageText .text-1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+body #container #forthPage .forthPageText .text-2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+body #container #forthPage .forthPageText .text-3 {
+  font-size: 0.875rem;
+  color: white;
+  text-decoration: none;
+  margin-top: 3rem;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: "Karla", Sans-serif;
+}
+body #container #forthPage .forthPageText .text-3:hover {
+  background: white;
+  color: black;
 }
