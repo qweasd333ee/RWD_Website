@@ -194,7 +194,8 @@ body #container #thirdPage {
 body #container #thirdPage .thirdPageText {
   width: 100%;
   height: 50%;
-  padding: 30px 20px 40px 20px;
+  margin: 0 14px;
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,6 +213,7 @@ body #container #thirdPage .thirdPageText {
 }
 body #container #thirdPage .thirdPageText .text-1 {
   color: rgb(189, 183, 107);
+  font-size: 0.8rem;
   margin-bottom: 20px;
   font-family: "Karla", Sans-serif;
 }
@@ -221,16 +223,23 @@ body #container #thirdPage .thirdPageText .text-2 {
   margin-bottom: 20px;
   font-family: "Oswald", Sans-serif;
 }
-body #container #thirdPage .thirdPageText .text-3,
-body #container #thirdPage .thirdPageText .text-4 {
+body #container #thirdPage .thirdPageText .text-3 {
   color: #9d9d9d;
   margin-bottom: 20px;
   font-family: "Karla", Sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+}
+body #container #thirdPage .thirdPageText .text-4 {
+  color: #9d9d9d;
+  margin-bottom: 36px;
+  font-family: "Karla", Sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.3rem;
 }
 body #container #thirdPage .thirdPageText .text-5 {
   width: 80%;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 500;
   text-decoration: none;
   color: white;
@@ -246,14 +255,11 @@ body #container #thirdPage .thirdPageText .text-5:hover {
 }
 body #container #thirdPage .thirdPagePic {
   width: 100%;
-  height: 50%;
-}
-body #container #thirdPage img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-  width: 100%;
-  height: 100%;
+  height: 200px;
+  background: url("../images/pic-5.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body #container #forthPage {
   width: 100%;
@@ -344,6 +350,129 @@ body #container #fivePage .fivePagePic {
   width: 100%;
   height: 200px;
   background: url("../images/pic-6.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+body #container #sixPage {
+  width: 100%;
+}
+body #container #sixPage .row {
+  width: 100%;
+}
+body #container #sixPage .row .col {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Karla", Sans-serif;
+}
+body #container #sixPage .row .col .sixPagePic {
+  width: 25%;
+  border-radius: 50%;
+}
+body #container #sixPage .row .col .sixPagetext {
+  width: 65%;
+  padding-left: 20px;
+}
+body #container #sixPage .row .col .sixPagetext h5 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: rgba(0, 0, 0, 0.8);
+}
+body #container #sixPage .row .col .sixPagetext p {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+body #container #sixPage .row .col .sixPageMoney {
+  font-size: 1rem;
+  text-align: right;
+  width: 10%;
+  color: rgba(0, 0, 0, 0.8);
+}
+body #container #sevenPage {
+  width: 100%;
+  background: #f5f2f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body #container #sevenPage .sevenPageText {
+  width: 100%;
+  height: 50%;
+  margin: 0 14px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+body #container #sevenPage .sevenPageText .text-1 {
+  color: rgb(189, 183, 107);
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  font-family: "Karla", Sans-serif;
+}
+body #container #sevenPage .sevenPageText .text-2 {
+  color: #404040;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Oswald", Sans-serif;
+}
+body #container #sevenPage .sevenPageText .text-3 {
+  color: #9d9d9d;
+  margin-bottom: 20px;
+  font-family: "Karla", Sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+}
+body #container #sevenPage .sevenPageText .text-4 {
+  color: #9d9d9d;
+  margin-bottom: 36px;
+  font-family: "Karla", Sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.3rem;
+}
+body #container #sevenPage .sevenPageText .text-5 {
+  width: 80%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  background: rgb(189, 183, 107);
+  padding: 0.8rem 1.2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: "Karla", Sans-serif;
+  letter-spacing: 2px;
+}
+body #container #sevenPage .sevenPageText .text-5:hover {
+  background: rgba(189, 183, 107, 0.53);
+}
+body #container #sevenPage .sevenPagePic {
+  width: 100%;
+  height: 200px;
+  background: url("../images/pic-13.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

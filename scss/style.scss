@@ -156,7 +156,8 @@ body {
       .thirdPageText {
         width: 100%;
         height: 50%;
-        padding: 30px 20px 40px 20px;
+        margin: 0 14px;
+        padding: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -164,6 +165,7 @@ body {
         text-align: center;
         .text-1 {
           color: rgb(189, 183, 107);
+          font-size: 0.8rem;
           margin-bottom: 20px;
           font-family: 'Karla', Sans-serif;
         }
@@ -173,16 +175,23 @@ body {
           margin-bottom: 20px;
           font-family: 'Oswald', Sans-serif;
         }
-        .text-3,
-        .text-4 {
+        .text-3 {
           color: #9d9d9d;
           margin-bottom: 20px;
           font-family: 'Karla', Sans-serif;
-          font-size: 0.9rem;
+          font-size: 0.875rem;
+          line-height: 1.3rem;
+        }
+        .text-4 {
+          color: #9d9d9d;
+          margin-bottom: 36px;
+          font-family: 'Karla', Sans-serif;
+          font-size: 0.875rem;
+          line-height: 1.3rem;
         }
         .text-5 {
           width: 80%;
-          font-size: 0.875rem;
+          font-size: 0.8rem;
           font-weight: 500;
           text-decoration: none;
           color: white;
@@ -198,13 +207,11 @@ body {
       }
       .thirdPagePic {
         width: 100%;
-        height: 50%;
-      }
-      img {
-        object-fit: cover;
-        display: block;
-        width: 100%;
-        height: 100%;
+        height: 200px;
+        background: url('../images/pic-5.jpeg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
     }
     #forthPage {
@@ -282,6 +289,110 @@ body {
         width: 100%;
         height: 200px;
         background: url('../images/pic-6.jpeg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+      }
+    }
+    #sixPage {
+      width: 100%;
+      .row {
+        width: 100%;
+        .col {
+          width: 100%;
+          padding: 0 20px 20px 20px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          font-family: "Karla", Sans-serif;
+          .sixPagePic {
+            width: 25%;
+            border-radius: 50%;
+          }
+          .sixPagetext {
+            width: 65%;
+            padding-left: 20px;
+            h5 {
+              font-size: 1rem;
+              margin-bottom: 4px;
+              color: rgba(0,0,0,0.8);
+            }
+            p {
+              font-size: 0.875rem;
+              color: rgba(0,0,0,0.54);
+            }
+          }
+          .sixPageMoney {
+            font-size: 1rem;
+            text-align: right;
+            width: 10%;
+            color: rgba(0,0,0,0.8);
+          }
+        }
+      }
+    }
+    #sevenPage {
+      width: 100%;
+      background: #f5f2f0;
+      display: flex;
+      flex-wrap: wrap;
+      .sevenPageText {
+        width: 100%;
+        height: 50%;
+        margin: 0 14px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .text-1 {
+          color: rgb(189, 183, 107);
+          font-size: 0.8rem;
+          margin-bottom: 20px;
+          font-family: 'Karla', Sans-serif;
+        }
+        .text-2 {
+          color: #404040;
+          font-size: 2rem;
+          margin-bottom: 20px;
+          font-family: 'Oswald', Sans-serif;
+        }
+        .text-3 {
+          color: #9d9d9d;
+          margin-bottom: 20px;
+          font-family: 'Karla', Sans-serif;
+          font-size: 0.875rem;
+          line-height: 1.3rem;
+        }
+        .text-4 {
+          color: #9d9d9d;
+          margin-bottom: 36px;
+          font-family: 'Karla', Sans-serif;
+          font-size: 0.875rem;
+          line-height: 1.3rem;
+        }
+        .text-5 {
+          width: 80%;
+          font-size: 0.8rem;
+          font-weight: 500;
+          text-decoration: none;
+          color: white;
+          background: rgb(189, 183, 107);
+          padding: 0.8rem 1.2rem;
+          transition: all 0.3s;
+          font-family: 'Karla', Sans-serif;
+          letter-spacing: 2px;
+          &:hover {
+            background: rgb(189, 183, 107, 0.53);
+          }
+        }
+      }
+      .sevenPagePic {
+        width: 100%;
+        height: 200px;
+        background: url('../images/pic-13.jpg');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
