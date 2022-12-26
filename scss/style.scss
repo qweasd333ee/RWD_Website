@@ -42,6 +42,10 @@ body {
       color: white;
       .firstPageText {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         padding: 20px;
         font-family: 'Oswald', Sans-serif;
@@ -305,7 +309,7 @@ body {
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          font-family: "Karla", Sans-serif;
+          font-family: 'Karla', Sans-serif;
           .sixPagePic {
             width: 25%;
             border-radius: 50%;
@@ -316,18 +320,18 @@ body {
             h5 {
               font-size: 1rem;
               margin-bottom: 4px;
-              color: rgba(0,0,0,0.8);
+              color: rgba(0, 0, 0, 0.8);
             }
             p {
               font-size: 0.875rem;
-              color: rgba(0,0,0,0.54);
+              color: rgba(0, 0, 0, 0.54);
             }
           }
           .sixPageMoney {
             font-size: 1rem;
             text-align: right;
             width: 10%;
-            color: rgba(0,0,0,0.8);
+            color: rgba(0, 0, 0, 0.8);
           }
         }
       }
@@ -396,6 +400,142 @@ body {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+      }
+    }
+    #eightPage {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      .text-1 {
+        width: 100%;
+        color: #404040;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        font-family: 'Oswald', Sans-serif;
+      }
+      .text-2 {
+        width: 100%;
+        font-size: 0.85rem;
+        color: rgba(0, 0, 0, 0.54);
+        font-family: 'Karla', Sans-serif;
+      }
+      .carousel {
+        width: 100%;
+        img {
+          width: 45%;
+        }
+      }
+      .text-3 {
+        font-size: 0.85rem;
+        color: rgba(0, 0, 0, 0.54);
+        font-family: 'Karla', Sans-serif;
+      }
+      .eightPageCard {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .row:nth-child(1) {
+          width: 50%;
+          height: 64px;
+          text-align: right;
+          padding-right: 8px;
+          img {
+            width: 30%;
+            border-radius: 50%;
+          }
+        }
+        .row:nth-child(2) {
+          width: 50%;
+          height: 64px;
+          text-align: left;
+          padding-left: 8px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          .cardText-1 {
+            color: rgba(0, 0, 0, 0.7);
+            font-family: 'Karla', Sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            letter-spacing: -0.3px;
+          }
+          .cardText-2 {
+            color: #999999;
+            font-family: 'Karla', Sans-serif;
+            font-size: 0.8125rem;
+            font-weight: normal;
+            line-height: 1.2em;
+            letter-spacing: -0.3px;
+          }
+        }
+      }
+    }
+    #ninePage {
+      width: 100%;
+      padding: 60px 0 60px 0;
+      background: rgba(0, 0, 0, 0.25) url('../images/bg-3.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: darken;
+      /* background-attachment: fixed; */
+      color: white;
+      .ninePageText {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        font-family: 'Oswald', Sans-serif;
+        .text-1 {
+          font-size: 2rem;
+          margin-top: 1rem;
+        }
+        .text-2 {
+          font-size: 1rem;
+          margin-top: 1rem;
+          font-weight: 400;
+          font-family: 'Karla', Sans-serif;
+        }
+        .text-3 {
+          font-size: 0.875rem;
+          color: white;
+          text-decoration: none;
+          margin-top: 3rem;
+          border: 1px solid white;
+          padding: 1rem 2rem;
+          transition: all 0.3s;
+          font-family: 'Karla', Sans-serif;
+          &:hover {
+            background: white;
+            color: black;
+          }
+        }
+      }
+    }
+    #tenPage {
+      width: 100%;
+      .row:nth-child(1) {
+        width: 100%;
+        padding: 30px 30px 40px 30px;
+      }
+      .row:nth-child(2) {
+        position: relative;
+        width: 100%;
+        iframe {
+          pointer-events: none;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          z-index: 1000002;
+          border: 2px solid rgb(26, 115, 232);
+        }
       }
     }
   }
