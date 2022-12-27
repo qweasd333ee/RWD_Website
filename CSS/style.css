@@ -640,6 +640,29 @@ body #container #tenPage {
 body #container #tenPage .row:nth-child(1) {
   width: 100%;
   padding: 30px 30px 40px 30px;
+  background: #f5f2f0;
+}
+body #container #tenPage .row:nth-child(1) .col {
+  width: 100%;
+  color: #777777;
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.4em;
+  font-family: "Karla", Sans-serif;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+body #container #tenPage .row:nth-child(1) .col:nth-child(1) {
+  width: 100%;
+  color: #404040;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Oswald", Sans-serif;
+  text-align: center;
+}
+body #container #tenPage .row:nth-child(1) .col:nth-child(4) div:nth-child(2) {
+  font-weight: bolder;
 }
 body #container #tenPage .row:nth-child(2) {
   position: relative;
