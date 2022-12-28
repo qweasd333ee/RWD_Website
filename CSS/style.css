@@ -498,6 +498,7 @@ body #container #eightPage {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
+  padding: 20px 0 40px 0;
 }
 body #container #eightPage .text-1 {
   width: 100%;
@@ -591,7 +592,6 @@ body #container #ninePage {
 }
 body #container #ninePage .ninePageText {
   width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,11 +667,12 @@ body #container #tenPage .row:nth-child(1) .col:nth-child(4) div:nth-child(2) {
 body #container #tenPage .row:nth-child(2) {
   position: relative;
   width: 100%;
+  height: 420px;
 }
 body #container #tenPage .row:nth-child(2) iframe {
   pointer-events: none;
   width: 100%;
-  height: 100%;
+  height: 420px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   z-index: 1000002;

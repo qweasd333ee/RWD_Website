@@ -407,6 +407,7 @@ body {
       display: flex;
       flex-wrap: wrap;
       text-align: center;
+      padding: 20px 0 40px 0;
       .text-1 {
         width: 100%;
         color: #404040;
@@ -485,7 +486,6 @@ body {
       color: white;
       .ninePageText {
         width: 100%;
-        height: 100%;
         display: flex;
         text-align: center;
         justify-content: center;
@@ -553,10 +553,11 @@ body {
       .row:nth-child(2) {
         position: relative;
         width: 100%;
+        height: 420px;
         iframe {
           pointer-events: none;
           width: 100%;
-          height: 100%;
+          height: 420px;
           box-sizing: border-box;
           z-index: 1000002;
           border: 2px solid rgb(26, 115, 232);
