@@ -19,8 +19,9 @@ body #container #navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -29,11 +30,29 @@ body #container #navbar {
           box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 body #container #navbar .navbarTitle {
-  font-size: 1.3rem;
+  width: 70%;
+  font-size: 1.6rem;
   font-weight: 600;
   color: rgb(87, 73, 74);
   padding: 20px 5px;
   font-family: "Quintessential", Sans-serif;
+}
+body #container #navbar .navbarBtn {
+  width: 30%;
+  text-align: center;
+}
+body #container #navbar .navbarBtn button {
+  border: none;
+  background: none;
+  margin: 0 auto;
+  cursor: pointer;
+}
+body #container #navbar .navbarBtn button i {
+  font-weight: 900;
+  font-size: 24px;
+}
+body #container #navbar .navbarMenu {
+  display: none;
 }
 body #container #navbar .navbarMenu a {
   text-decoration: none;
@@ -517,7 +536,7 @@ body #container #eightPage .carousel {
   width: 100%;
 }
 body #container #eightPage .carousel img {
-  width: 45%;
+  width: 95%;
 }
 body #container #eightPage .text-3 {
   font-size: 0.85rem;
@@ -645,13 +664,22 @@ body #container #tenPage .row:nth-child(1) {
 body #container #tenPage .row:nth-child(1) .col {
   width: 100%;
   color: #777777;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: normal;
   line-height: 1.4em;
   font-family: "Karla", Sans-serif;
-  padding-left: 20px;
   margin-bottom: 8px;
   padding-bottom: 8px;
+}
+body #container #tenPage .row:nth-child(1) .col .tenPageIcon {
+  width: 30px;
+}
+body #container #tenPage .row:nth-child(1) .col .tenPageIcon i {
+  font-size: 24px;
+  color: #bdb76b;
+}
+body #container #tenPage .row:nth-child(1) .col .tenPageText {
+  margin-left: 20px;
 }
 body #container #tenPage .row:nth-child(1) .col:nth-child(1) {
   width: 100%;
@@ -661,8 +689,40 @@ body #container #tenPage .row:nth-child(1) .col:nth-child(1) {
   font-family: "Oswald", Sans-serif;
   text-align: center;
 }
-body #container #tenPage .row:nth-child(1) .col:nth-child(4) div:nth-child(2) {
+body #container #tenPage .row:nth-child(1) .col:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body #container #tenPage .row:nth-child(1) .col:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body #container #tenPage .row:nth-child(1) .col:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body #container #tenPage .row:nth-child(1) .col:nth-child(4) .tenPageText div {
   font-weight: bolder;
+}
+body #container #tenPage .row:nth-child(1) .col:nth-child(5) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 body #container #tenPage .row:nth-child(2) {
   position: relative;

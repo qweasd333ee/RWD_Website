@@ -10,18 +10,34 @@ body {
       height: 70px;
       position: fixed;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       background: rgba(255, 255, 255);
       box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
       .navbarTitle {
-        font-size: 1.3rem;
+        width: 70%;
+        font-size: 1.6rem;
         font-weight: 600;
         color: rgb(87, 73, 74);
         padding: 20px 5px;
         font-family: 'Quintessential', Sans-serif;
       }
+      .navbarBtn {
+        width: 30%;
+        text-align: center;
+        button {
+          border: none;
+          background: none;
+          margin: 0 auto;
+          cursor: pointer;
+          i {
+            font-weight: 900;
+            font-size: 24px;
+          }
+        }
+      }
       .navbarMenu {
+        display: none;
         a {
           text-decoration: none;
           color: rgb(130, 105, 106);
@@ -424,7 +440,7 @@ body {
       .carousel {
         width: 100%;
         img {
-          width: 45%;
+          width: 95%;
         }
       }
       .text-3 {
@@ -528,13 +544,22 @@ body {
         .col {
           width: 100%;
           color: #777777;
-          font-size: 1.2rem;
+          font-size: 1rem;
           font-weight: normal;
           line-height: 1.4em;
-          font-family: "Karla", Sans-serif;
-          padding-left: 20px;
+          font-family: 'Karla', Sans-serif;
           margin-bottom: 8px;
           padding-bottom: 8px;
+          .tenPageIcon {
+            width: 30px;
+            i {
+              font-size: 24px;
+              color: #bdb76b;
+            }
+          }
+          .tenPageText {
+            margin-left: 20px;
+          }
         }
         .col:nth-child(1) {
           width: 100%;
@@ -544,10 +569,26 @@ body {
           font-family: 'Oswald', Sans-serif;
           text-align: center;
         }
+        .col:nth-child(2) {
+          display: flex;
+          align-items: center;
+        }
+        .col:nth-child(3) {
+          display: flex;
+          align-items: center;
+        }
         .col:nth-child(4) {
-          div:nth-child(2) {
-            font-weight: bolder;
+          display: flex;
+          align-items: center;
+          .tenPageText {
+            div {
+              font-weight: bolder;
+            }
           }
+        }
+        .col:nth-child(5) {
+          display: flex;
+          align-items: center;
         }
       }
       .row:nth-child(2) {
