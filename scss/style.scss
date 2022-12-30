@@ -121,19 +121,31 @@ body {
           color: rgb(189, 183, 107);
           margin-bottom: 20px;
           font-family: 'Karla', Sans-serif;
+          line-height: 24px;
         }
         .text-2 {
           color: #404040;
-          font-size: 2rem;
-          margin-bottom: 20px;
           font-family: 'Oswald', Sans-serif;
-        }
-        .text-3,
-        .text-4 {
-          color: #9d9d9d;
+          font-size: 2rem;
+          line-height: 2.5rem;
           margin-bottom: 20px;
+          
+        }
+        .text-3 {
+          color: #7f7f7f;
           font-family: 'Karla', Sans-serif;
-          font-size: 0.9rem;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5em;
+          margin-bottom: 20px;
+        }
+        .text-4 {
+          color: #7a7a7a;
+          font-family: 'Karla', Sans-serif;
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+          margin-bottom: 36px;
         }
         .text-5 {
           width: 80%;
@@ -176,8 +188,7 @@ body {
       .thirdPageText {
         width: 100%;
         height: 50%;
-        margin: 0 14px;
-        padding: 30px;
+        padding: 40px 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -185,33 +196,39 @@ body {
         text-align: center;
         .text-1 {
           color: rgb(189, 183, 107);
-          font-size: 0.8rem;
-          margin-bottom: 20px;
           font-family: 'Karla', Sans-serif;
+          font-size: 0.9rem;
+          margin-bottom: 20px;
+          
+          line-height: 24px;
         }
         .text-2 {
           color: #404040;
-          font-size: 2rem;
-          margin-bottom: 20px;
           font-family: 'Oswald', Sans-serif;
+          font-size: 2rem;
+          line-height: 2.5rem;
+          margin-bottom: 20px;
+          
         }
         .text-3 {
-          color: #9d9d9d;
-          margin-bottom: 20px;
+          color: #7f7f7f;
           font-family: 'Karla', Sans-serif;
-          font-size: 0.875rem;
-          line-height: 1.3rem;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5em;
+          margin-bottom: 20px;
         }
         .text-4 {
-          color: #9d9d9d;
-          margin-bottom: 36px;
+          color: #7a7a7a;
           font-family: 'Karla', Sans-serif;
           font-size: 0.875rem;
-          line-height: 1.3rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+          margin-bottom: 36px;
         }
         .text-5 {
           width: 80%;
-          font-size: 0.8rem;
+          font-size: 0.875rem;
           font-weight: 500;
           text-decoration: none;
           color: white;
@@ -237,7 +254,7 @@ body {
     #forthPage {
       width: 100%;
       height: 40%;
-      padding: 60px 0 60px 0;
+      padding: 40px;
       background: rgba(0, 0, 0, 0.25) url('../images/bg-2.jpg');
       background-position: center center;
       background-repeat: no-repeat;
@@ -253,27 +270,28 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 20px;
-        font-family: 'Oswald', Sans-serif;
         .text-1 {
-          font-size: 2rem;
-          margin-top: 1rem;
+          font-family: 'Oswald', Sans-serif;
+          font-size: 2.2rem;
+          margin-bottom: 20px;
         }
         .text-2 {
-          font-size: 1rem;
-          margin-top: 1rem;
-          font-weight: 400;
           font-family: 'Karla', Sans-serif;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.4;
+          margin-bottom: 28px;
         }
         .text-3 {
-          font-size: 0.875rem;
           color: white;
-          text-decoration: none;
-          margin-top: 3rem;
-          border: 1px solid white;
-          padding: 1rem 2rem;
-          transition: all 0.3s;
           font-family: 'Karla', Sans-serif;
+          font-size: 0.9rem;
+          letter-spacing: 2px;
+          text-decoration: none;
+          border: 1px solid white;
+          padding: 15px 30px;
+          transition: all 0.3s;
+          
           &:hover {
             background: white;
             color: black;
@@ -288,21 +306,23 @@ body {
       flex-wrap: wrap;
       .fivePageText {
         width: 100%;
-        padding: 30px 20px 40px 20px;
+        padding: 40px 30px;
         text-align: left;
         .text-1 {
           color: #404040;
-          font-size: 2.2rem;
           font-family: 'Oswald', Sans-serif;
+          font-size: 2.2rem;
+          line-height: 1.17;
           border-left: solid 8px #9ccc65;
           padding: 0 0 0 22px;
-          margin: 0 0 20px -20px;
+          margin: 0 0 20px -30px;
         }
         .text-2 {
           color: #7a7a7a;
-          font-size: 1rem;
-          margin-bottom: 20px;
           font-family: 'Karla', Sans-serif;
+          font-size: 1rem;
+          line-height: 1.5;
+          margin-bottom: 20px;
         }
       }
       .fivePagePic {
@@ -334,13 +354,15 @@ body {
             width: 65%;
             padding-left: 20px;
             h5 {
-              font-size: 1rem;
-              margin-bottom: 4px;
               color: rgba(0, 0, 0, 0.8);
+              font-size: 1rem;
+              line-height: 1.33;
+              margin-bottom: 4px;
             }
             p {
-              font-size: 0.875rem;
               color: rgba(0, 0, 0, 0.54);
+              font-size: 0.875rem;
+              line-height: 1.5;
             }
           }
           .sixPageMoney {
@@ -361,7 +383,7 @@ body {
         width: 100%;
         height: 50%;
         margin: 0 14px;
-        padding: 30px;
+        padding: 40px 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -369,33 +391,39 @@ body {
         text-align: center;
         .text-1 {
           color: rgb(189, 183, 107);
-          font-size: 0.8rem;
-          margin-bottom: 20px;
           font-family: 'Karla', Sans-serif;
+          font-size: 0.9rem;
+          margin-bottom: 20px;
+          
+          line-height: 24px;
         }
         .text-2 {
           color: #404040;
-          font-size: 2rem;
-          margin-bottom: 20px;
           font-family: 'Oswald', Sans-serif;
+          font-size: 2rem;
+          line-height: 2.5rem;
+          margin-bottom: 20px;
+          
         }
         .text-3 {
-          color: #9d9d9d;
-          margin-bottom: 20px;
+          color: #7f7f7f;
           font-family: 'Karla', Sans-serif;
-          font-size: 0.875rem;
-          line-height: 1.3rem;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5em;
+          margin-bottom: 20px;
         }
         .text-4 {
-          color: #9d9d9d;
-          margin-bottom: 36px;
+          color: #7a7a7a;
           font-family: 'Karla', Sans-serif;
           font-size: 0.875rem;
-          line-height: 1.3rem;
+          font-weight: 400;
+          line-height: 1.5rem;
+          margin-bottom: 36px;
         }
         .text-5 {
           width: 80%;
-          font-size: 0.8rem;
+          font-size: 0.875rem;
           font-weight: 500;
           text-decoration: none;
           color: white;
