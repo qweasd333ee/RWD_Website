@@ -538,32 +538,57 @@ body #container #eightPage {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  text-align: center;
-  padding: 20px 0 40px 0;
+  padding: 30px 10px 50px 10px;
 }
 body #container #eightPage .text-1 {
   width: 100%;
+  padding: 0 20px 10px 20px;
+  text-align: center;
+}
+body #container #eightPage .text-1 h1 {
+  width: 100%;
   color: #404040;
-  font-size: 2rem;
+  font-size: 2.125rem;
+  line-height: 1.17em;
   margin-bottom: 20px;
   font-family: "Oswald", Sans-serif;
 }
-body #container #eightPage .text-2 {
+body #container #eightPage .text-1 p {
   width: 100%;
-  font-size: 0.85rem;
   color: rgba(0, 0, 0, 0.54);
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  font-weight: 500;
+  margin-bottom: 20px;
   font-family: "Karla", Sans-serif;
 }
 body #container #eightPage .carousel {
   width: 100%;
+  margin-bottom: 20px;
 }
 body #container #eightPage .carousel img {
-  width: 95%;
+  width: 100%;
+  padding: 0 10px;
 }
-body #container #eightPage .text-3 {
+body #container #eightPage .carousel .slick-prev {
+  left: 4%;
+  z-index: 1000;
+}
+body #container #eightPage .carousel .slick-next {
+  left: 92%;
+}
+body #container #eightPage .text-2 {
+  padding: 0 20px 20px 20px;
+  text-align: center;
+}
+body #container #eightPage .text-2 p {
+  margin-bottom: 20px;
   font-size: 0.85rem;
+  line-height: 1.5em;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.54);
   font-family: "Karla", Sans-serif;
+  font-style: italic;
 }
 body #container #eightPage .eightPageCard {
   width: 100%;
@@ -583,7 +608,7 @@ body #container #eightPage .eightPageCard .row:nth-child(1) {
   padding-right: 8px;
 }
 body #container #eightPage .eightPageCard .row:nth-child(1) img {
-  width: 30%;
+  width: 64px;
   border-radius: 50%;
 }
 body #container #eightPage .eightPageCard .row:nth-child(2) {
@@ -610,6 +635,7 @@ body #container #eightPage .eightPageCard .row:nth-child(2) .cardText-1 {
   font-family: "Karla", Sans-serif;
   font-size: 1rem;
   font-weight: bold;
+  line-height: 24px;
   letter-spacing: -0.3px;
 }
 body #container #eightPage .eightPageCard .row:nth-child(2) .cardText-2 {
@@ -617,7 +643,7 @@ body #container #eightPage .eightPageCard .row:nth-child(2) .cardText-2 {
   font-family: "Karla", Sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
-  line-height: 1.2em;
+  line-height: 24px;
   letter-spacing: -0.3px;
 }
 body #container #ninePage {

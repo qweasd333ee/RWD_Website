@@ -129,7 +129,6 @@ body {
           font-size: 2rem;
           line-height: 2.5rem;
           margin-bottom: 20px;
-          
         }
         .text-3 {
           color: #7f7f7f;
@@ -199,7 +198,7 @@ body {
           font-family: 'Karla', Sans-serif;
           font-size: 0.9rem;
           margin-bottom: 20px;
-          
+
           line-height: 24px;
         }
         .text-2 {
@@ -208,7 +207,6 @@ body {
           font-size: 2rem;
           line-height: 2.5rem;
           margin-bottom: 20px;
-          
         }
         .text-3 {
           color: #7f7f7f;
@@ -291,7 +289,7 @@ body {
           border: 1px solid white;
           padding: 15px 30px;
           transition: all 0.3s;
-          
+
           &:hover {
             background: white;
             color: black;
@@ -394,7 +392,7 @@ body {
           font-family: 'Karla', Sans-serif;
           font-size: 0.9rem;
           margin-bottom: 20px;
-          
+
           line-height: 24px;
         }
         .text-2 {
@@ -403,7 +401,6 @@ body {
           font-size: 2rem;
           line-height: 2.5rem;
           margin-bottom: 20px;
-          
         }
         .text-3 {
           color: #7f7f7f;
@@ -450,31 +447,56 @@ body {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      text-align: center;
-      padding: 20px 0 40px 0;
+      padding: 30px 10px 50px 10px;
       .text-1 {
         width: 100%;
-        color: #404040;
-        font-size: 2rem;
-        margin-bottom: 20px;
-        font-family: 'Oswald', Sans-serif;
-      }
-      .text-2 {
-        width: 100%;
-        font-size: 0.85rem;
-        color: rgba(0, 0, 0, 0.54);
-        font-family: 'Karla', Sans-serif;
+        padding: 0 20px 10px 20px;
+        text-align: center;
+        h1 {
+          width: 100%;
+          color: #404040;
+          font-size: 2.125rem;
+          line-height: 1.17em;
+          margin-bottom: 20px;
+          font-family: 'Oswald', Sans-serif;
+        }
+        p {
+          width: 100%;
+          color: rgba(0, 0, 0, 0.54);
+          font-size: 0.875rem;
+          line-height: 1.5em;
+          font-weight: 500;
+          margin-bottom: 20px;
+          font-family: 'Karla', Sans-serif;
+        }
       }
       .carousel {
         width: 100%;
+        margin-bottom: 20px;
         img {
-          width: 95%;
+          width: 100%;
+          padding: 0 10px;
+        }
+        .slick-prev {
+          left: 4%;
+          z-index: 1000;
+        }
+        .slick-next {
+          left: 92%;
         }
       }
-      .text-3 {
-        font-size: 0.85rem;
-        color: rgba(0, 0, 0, 0.54);
-        font-family: 'Karla', Sans-serif;
+      .text-2 {
+        padding: 0 20px 20px 20px;
+        text-align: center;
+        p {
+          margin-bottom: 20px;
+          font-size: 0.85rem;
+          line-height: 1.5em;
+          font-weight: 400;
+          color: rgba(0, 0, 0, 0.54);
+          font-family: 'Karla', Sans-serif;
+          font-style: italic;
+        }
       }
       .eightPageCard {
         width: 100%;
@@ -487,7 +509,7 @@ body {
           text-align: right;
           padding-right: 8px;
           img {
-            width: 30%;
+            width: 64px;
             border-radius: 50%;
           }
         }
@@ -505,6 +527,7 @@ body {
             font-family: 'Karla', Sans-serif;
             font-size: 1rem;
             font-weight: bold;
+            line-height: 24px;
             letter-spacing: -0.3px;
           }
           .cardText-2 {
@@ -512,7 +535,7 @@ body {
             font-family: 'Karla', Sans-serif;
             font-size: 0.8125rem;
             font-weight: normal;
-            line-height: 1.2em;
+            line-height: 24px;
             letter-spacing: -0.3px;
           }
         }
