@@ -1,8 +1,10 @@
 body {
   width: 100%;
+  min-height: 100vh;
 }
 body #container {
   width: 100%;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +16,7 @@ body #container {
 body #container #navbar {
   width: 100%;
   padding: 5px;
-  height: 70px;
+  height: 75px;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,7 +31,19 @@ body #container #navbar {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
-body #container #navbar .navbarTitle {
+body #container #navbar .section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body #container #navbar .section .navbarTitle {
   width: 70%;
   font-size: 25px;
   font-weight: 600;
@@ -37,35 +51,49 @@ body #container #navbar .navbarTitle {
   padding: 20px 5px;
   font-family: "Quintessential", Sans-serif;
 }
-body #container #navbar .navbarBtn {
+body #container #navbar .section .navbarBtn {
   width: 30%;
   text-align: center;
 }
-body #container #navbar .navbarBtn button {
+body #container #navbar .section .navbarBtn button {
   border: none;
   background: none;
   margin: 0 auto;
   cursor: pointer;
 }
-body #container #navbar .navbarBtn button i {
+body #container #navbar .section .navbarBtn button i {
   font-weight: 900;
   font-size: 24px;
 }
-body #container #navbar .navbarMenu {
+body #container #navbar .section .navbarMenu {
+  width: 30%;
   display: none;
+  font-size: medium;
+  text-align: right;
 }
-body #container #navbar .navbarMenu a {
+body #container #navbar .section .navbarMenu a {
+  font-family: "Oswald", Sans-serif;
+  font-weight: 400;
   text-decoration: none;
-  color: rgb(130, 105, 106);
+  padding: 15px;
+  color: #836969;
+}
+body #container #navbar .section .navbarMenu a:hover {
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body #container #navbar .section .navbarMenu a:active {
+  color: black;
 }
 body #container #firstPage {
   width: 100%;
-  height: 60%;
-  padding: 60px 0 60px 0;
+  min-height: 40vh;
+  padding: 60px 0;
+  background: rgba(0, 0, 0, 0.35) url("../images/bg-1.jpeg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: rgba(0, 0, 0, 0.35) url("../images/bg-1.jpeg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,12 +152,12 @@ body #container #firstPage .firstPageText .col .text-2 {
   font-size: 2.125rem;
   line-height: 1.16em;
   margin-bottom: 20px;
-  font-weight: 400;
+  font-weight: 200;
 }
 body #container #firstPage .firstPageText .col .text-3 {
   font-size: 0.875rem;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 5px;
 }
 body #container #firstPage .firstPageText .col .text-4 {
@@ -149,6 +177,7 @@ body #container #firstPage .firstPageText .col .text-5 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-family: "Karla", Sans-serif;
+  font-weight: normal;
   letter-spacing: 2px;
 }
 body #container #firstPage .firstPageText .col .text-5:hover {
@@ -158,6 +187,9 @@ body #container #firstPage .firstPageText .col .text-5:hover {
 body #container #secondPage {
   width: 100%;
   background: rgb(255, 255, 255);
+}
+body #container #secondPage .section {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +202,7 @@ body #container #secondPage {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-body #container #secondPage .secPageText {
+body #container #secondPage .section .secPageText {
   width: 100%;
   height: 50%;
   padding: 30px 20px 40px 20px;
@@ -189,21 +221,23 @@ body #container #secondPage .secPageText {
           justify-content: center;
   text-align: center;
 }
-body #container #secondPage .secPageText .text-1 {
+body #container #secondPage .section .secPageText .text-1 {
   color: rgb(189, 183, 107);
   font-family: "Karla", Sans-serif;
   font-size: 0.875rem;
+  font-weight: normal;
   margin-bottom: 20px;
   line-height: 24px;
 }
-body #container #secondPage .secPageText .text-2 {
+body #container #secondPage .section .secPageText .text-2 {
   color: #404040;
   font-family: "Oswald", Sans-serif;
   font-size: 2rem;
+  font-weight: 200;
   line-height: 2.5rem;
   margin-bottom: 20px;
 }
-body #container #secondPage .secPageText .text-3 {
+body #container #secondPage .section .secPageText .text-3 {
   color: #7f7f7f;
   font-family: "Karla", Sans-serif;
   font-size: 1rem;
@@ -211,7 +245,7 @@ body #container #secondPage .secPageText .text-3 {
   line-height: 1.5em;
   margin-bottom: 20px;
 }
-body #container #secondPage .secPageText .text-4 {
+body #container #secondPage .section .secPageText .text-4 {
   color: #7a7a7a;
   font-family: "Karla", Sans-serif;
   font-size: 0.875rem;
@@ -219,7 +253,7 @@ body #container #secondPage .secPageText .text-4 {
   line-height: 1.5rem;
   margin-bottom: 36px;
 }
-body #container #secondPage .secPageText .text-5 {
+body #container #secondPage .section .secPageText .text-5 {
   width: 80%;
   font-size: 0.875rem;
   font-weight: 500;
@@ -232,21 +266,21 @@ body #container #secondPage .secPageText .text-5 {
   font-family: "Karla", Sans-serif;
   letter-spacing: 2px;
 }
-body #container #secondPage .secPageText .text-5:hover {
+body #container #secondPage .section .secPageText .text-5:hover {
   background: rgba(189, 183, 107, 0.53);
 }
-body #container #secondPage .secPagePic {
+body #container #secondPage .section .secPagePic {
   width: 100%;
   height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-body #container #secondPage .secPagePic .row {
+body #container #secondPage .section .secPagePic .row {
   width: 50%;
   height: 100%;
 }
-body #container #secondPage .secPagePic img {
+body #container #secondPage .section .secPagePic img {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
@@ -257,16 +291,17 @@ body #container #secondPage .secPagePic img {
 body #container #thirdPage {
   width: 100%;
   background: #f5f2f0;
+}
+body #container #thirdPage .section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-body #container #thirdPage .thirdPageText {
+body #container #thirdPage .section .thirdPageText {
   max-width: 510px;
   margin: auto;
-  height: 50%;
   padding: 40px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,23 +318,25 @@ body #container #thirdPage .thirdPageText {
           justify-content: center;
   text-align: center;
 }
-body #container #thirdPage .thirdPageText .text-1 {
+body #container #thirdPage .section .thirdPageText .text-1 {
   color: rgb(189, 183, 107);
   font-family: "Karla", Sans-serif;
   font-size: 0.875rem;
+  font-weight: normal;
   margin-bottom: 20px;
   line-height: 24px;
   letter-spacing: 0.5px;
   font-weight: 500;
 }
-body #container #thirdPage .thirdPageText .text-2 {
+body #container #thirdPage .section .thirdPageText .text-2 {
   color: #404040;
   font-family: "Oswald", Sans-serif;
   font-size: 2.125rem;
+  font-weight: 200;
   line-height: 2.5rem;
   margin-bottom: 20px;
 }
-body #container #thirdPage .thirdPageText .text-3 {
+body #container #thirdPage .section .thirdPageText .text-3 {
   color: #7f7f7f;
   font-family: "Karla", Sans-serif;
   font-size: 1rem;
@@ -307,7 +344,7 @@ body #container #thirdPage .thirdPageText .text-3 {
   line-height: 1.5em;
   margin-bottom: 20px;
 }
-body #container #thirdPage .thirdPageText .text-4 {
+body #container #thirdPage .section .thirdPageText .text-4 {
   color: #7a7a7a;
   font-family: "Karla", Sans-serif;
   font-size: 0.875rem;
@@ -315,7 +352,7 @@ body #container #thirdPage .thirdPageText .text-4 {
   line-height: 1.5rem;
   margin-bottom: 36px;
 }
-body #container #thirdPage .thirdPageText .text-5 {
+body #container #thirdPage .section .thirdPageText .text-5 {
   width: 80%;
   font-size: 0.875rem;
   font-weight: 500;
@@ -328,10 +365,10 @@ body #container #thirdPage .thirdPageText .text-5 {
   font-family: "Karla", Sans-serif;
   letter-spacing: 2px;
 }
-body #container #thirdPage .thirdPageText .text-5:hover {
+body #container #thirdPage .section .thirdPageText .text-5:hover {
   background: rgba(189, 183, 107, 0.53);
 }
-body #container #thirdPage .thirdPagePic {
+body #container #thirdPage .section .thirdPagePic {
   width: 100%;
   height: 200px;
   background: url("../images/pic-5.jpeg");
@@ -351,7 +388,7 @@ body #container #forthPage {
   /* background-attachment: fixed; */
   color: white;
 }
-body #container #forthPage .forthPageText {
+body #container #forthPage .section .forthPageText {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -369,23 +406,25 @@ body #container #forthPage .forthPageText {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-body #container #forthPage .forthPageText .text-1 {
+body #container #forthPage .section .forthPageText .text-1 {
   font-family: "Oswald", Sans-serif;
   font-size: 2.125rem;
+  font-weight: 200;
   line-height: 1.16em;
   margin-bottom: 20px;
 }
-body #container #forthPage .forthPageText .text-2 {
+body #container #forthPage .section .forthPageText .text-2 {
   font-family: "Karla", Sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.33em;
   margin-bottom: 28px;
 }
-body #container #forthPage .forthPageText .text-3 {
+body #container #forthPage .section .forthPageText .text-3 {
   color: white;
   font-family: "Karla", Sans-serif;
   font-size: 0.875rem;
+  font-weight: normal;
   letter-spacing: 2px;
   text-decoration: none;
   border: 1px solid white;
@@ -393,7 +432,7 @@ body #container #forthPage .forthPageText .text-3 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-body #container #forthPage .forthPageText .text-3:hover {
+body #container #forthPage .section .forthPageText .text-3:hover {
   background: white;
   color: black;
 }
@@ -406,24 +445,34 @@ body #container #fivePage {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-body #container #fivePage .fivePageText {
+body #container #fivePage .section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body #container #fivePage .section .fivePageText {
   width: 100%;
   padding: 40px 30px;
   text-align: left;
 }
-body #container #fivePage .fivePageText .text-1 {
+body #container #fivePage .section .fivePageText .text-1 {
   color: #404040;
   font-family: "Oswald", Sans-serif;
   font-size: 2.2rem;
+  font-weight: 200;
   line-height: 1.17;
   border-left: solid 8px #9ccc65;
   padding: 0 0 0 22px;
   margin: 0 0 20px -30px;
 }
-body #container #fivePage .fivePageText .text-2 {
+body #container #fivePage .section .fivePageText .text-2 {
   color: #7a7a7a;
   font-family: "Karla", Sans-serif;
   font-size: 1rem;
+  font-weight: normal;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -439,10 +488,18 @@ body #container #fivePage .fivePagePic {
 body #container #sixPage {
   width: 100%;
 }
-body #container #sixPage .row {
+body #container #sixPage .section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+body #container #sixPage .section .row {
   width: 100%;
 }
-body #container #sixPage .row .col {
+body #container #sixPage .section .row .col {
   width: 100%;
   padding: 0 20px 20px 20px;
   display: -webkit-box;
@@ -456,28 +513,31 @@ body #container #sixPage .row .col {
           align-items: center;
   font-family: "Karla", Sans-serif;
 }
-body #container #sixPage .row .col .sixPagePic {
+body #container #sixPage .section .row .col .sixPagePic {
   max-width: 26%;
   border-radius: 50%;
 }
-body #container #sixPage .row .col .sixPagetext {
+body #container #sixPage .section .row .col .sixPagetext {
   width: 65%;
   margin-top: 4px;
   padding-left: 20px;
 }
-body #container #sixPage .row .col .sixPagetext h5 {
+body #container #sixPage .section .row .col .sixPagetext h5 {
   color: rgba(0, 0, 0, 0.8);
   font-size: 1rem;
+  font-weight: normal;
   line-height: 1.33rem;
   margin-bottom: 4px;
 }
-body #container #sixPage .row .col .sixPagetext p {
+body #container #sixPage .section .row .col .sixPagetext p {
   color: rgba(0, 0, 0, 0.54);
   font-size: 0.875rem;
+  font-weight: normal;
   line-height: 1.5;
 }
-body #container #sixPage .row .col .sixPageMoney {
+body #container #sixPage .section .row .col .sixPageMoney {
   font-size: 1rem;
+  font-weight: normal;
   line-height: 1.33em;
   text-align: right;
   width: 10%;
@@ -492,11 +552,23 @@ body #container #sevenPage {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-body #container #sevenPage .sevenPageText {
+body #container #sevenPage .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 510px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+body #container #sevenPage .section .sevenPageText {
   width: 100%;
-  height: 50%;
-  margin: 0 14px;
-  padding: 40px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,21 +584,23 @@ body #container #sevenPage .sevenPageText {
           justify-content: center;
   text-align: center;
 }
-body #container #sevenPage .sevenPageText .text-1 {
+body #container #sevenPage .section .sevenPageText .text-1 {
   color: rgb(189, 183, 107);
   font-family: "Karla", Sans-serif;
   font-size: 0.875rem;
+  font-weight: normal;
   margin-bottom: 20px;
   line-height: 24px;
 }
-body #container #sevenPage .sevenPageText .text-2 {
+body #container #sevenPage .section .sevenPageText .text-2 {
   color: #404040;
   font-family: "Oswald", Sans-serif;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 2.125rem;
+  font-weight: 200;
+  line-height: 1.17em;
   margin-bottom: 20px;
 }
-body #container #sevenPage .sevenPageText .text-3 {
+body #container #sevenPage .section .sevenPageText .text-3 {
   color: #7f7f7f;
   font-family: "Karla", Sans-serif;
   font-size: 1rem;
@@ -534,7 +608,7 @@ body #container #sevenPage .sevenPageText .text-3 {
   line-height: 1.5em;
   margin-bottom: 20px;
 }
-body #container #sevenPage .sevenPageText .text-4 {
+body #container #sevenPage .section .sevenPageText .text-4 {
   color: #7a7a7a;
   font-family: "Karla", Sans-serif;
   font-size: 0.875rem;
@@ -542,7 +616,7 @@ body #container #sevenPage .sevenPageText .text-4 {
   line-height: 1.5rem;
   margin-bottom: 36px;
 }
-body #container #sevenPage .sevenPageText .text-5 {
+body #container #sevenPage .section .sevenPageText .text-5 {
   width: 80%;
   font-size: 0.875rem;
   font-weight: 500;
@@ -555,7 +629,7 @@ body #container #sevenPage .sevenPageText .text-5 {
   font-family: "Karla", Sans-serif;
   letter-spacing: 2px;
 }
-body #container #sevenPage .sevenPageText .text-5:hover {
+body #container #sevenPage .section .sevenPageText .text-5:hover {
   background: rgba(189, 183, 107, 0.53);
 }
 body #container #sevenPage .sevenPagePic {
@@ -568,64 +642,68 @@ body #container #sevenPage .sevenPagePic {
 }
 body #container #eightPage {
   width: 100%;
+  padding: 30px 10px 50px 10px;
+}
+body #container #eightPage .section {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 30px 10px 50px 10px;
 }
-body #container #eightPage .text-1 {
+body #container #eightPage .section .text-1 {
   width: 100%;
   padding: 0 20px 10px 20px;
   text-align: center;
 }
-body #container #eightPage .text-1 h1 {
+body #container #eightPage .section .text-1 h1 {
   width: 100%;
   color: #404040;
   font-size: 2.125rem;
-  line-height: 1.17em;
+  font-weight: 200;
+  line-height: 1.16em;
   margin-bottom: 20px;
   font-family: "Oswald", Sans-serif;
 }
-body #container #eightPage .text-1 p {
+body #container #eightPage .section .text-1 p {
   width: 100%;
   color: rgba(0, 0, 0, 0.54);
   font-size: 0.875rem;
-  line-height: 1.5em;
   font-weight: 500;
+  line-height: 1.5em;
   margin-bottom: 20px;
   font-family: "Karla", Sans-serif;
 }
-body #container #eightPage .carousel {
+body #container #eightPage .section .carousel {
   width: 100%;
   margin-bottom: 20px;
 }
-body #container #eightPage .carousel img {
+body #container #eightPage .section .carousel img {
   width: 100%;
   padding: 0 10px;
 }
-body #container #eightPage .carousel .slick-prev {
+body #container #eightPage .section .carousel .slick-prev {
   left: 4%;
   z-index: 1000;
 }
-body #container #eightPage .carousel .slick-next {
+body #container #eightPage .section .carousel .slick-next {
   left: 92%;
 }
-body #container #eightPage .text-2 {
+body #container #eightPage .section .text-2 {
   padding: 0 20px 20px 20px;
   text-align: center;
 }
-body #container #eightPage .text-2 p {
+body #container #eightPage .section .text-2 p {
   margin-bottom: 20px;
   font-size: 0.875rem;
-  line-height: 1.5em;
   font-weight: 400;
+  line-height: 1.5em;
   color: #777777;
   font-family: "Karla", Sans-serif;
   font-style: italic;
 }
-body #container #eightPage .eightPageCard {
+body #container #eightPage .section .eightPageCard {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -636,17 +714,17 @@ body #container #eightPage .eightPageCard {
       -ms-flex-align: center;
           align-items: center;
 }
-body #container #eightPage .eightPageCard .row:nth-child(1) {
+body #container #eightPage .section .eightPageCard .row:nth-child(1) {
   width: 50%;
   height: 64px;
   text-align: right;
   padding-right: 8px;
 }
-body #container #eightPage .eightPageCard .row:nth-child(1) img {
+body #container #eightPage .section .eightPageCard .row:nth-child(1) img {
   width: 64px;
   border-radius: 50%;
 }
-body #container #eightPage .eightPageCard .row:nth-child(2) {
+body #container #eightPage .section .eightPageCard .row:nth-child(2) {
   width: 50%;
   height: 64px;
   text-align: left;
@@ -665,7 +743,7 @@ body #container #eightPage .eightPageCard .row:nth-child(2) {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-body #container #eightPage .eightPageCard .row:nth-child(2) .cardText-1 {
+body #container #eightPage .section .eightPageCard .row:nth-child(2) .cardText-1 {
   color: rgba(0, 0, 0, 0.7);
   font-family: "Karla", Sans-serif;
   font-size: 1rem;
@@ -673,7 +751,7 @@ body #container #eightPage .eightPageCard .row:nth-child(2) .cardText-1 {
   line-height: 24px;
   letter-spacing: -0.3px;
 }
-body #container #eightPage .eightPageCard .row:nth-child(2) .cardText-2 {
+body #container #eightPage .section .eightPageCard .row:nth-child(2) .cardText-2 {
   color: #999999;
   font-family: "Karla", Sans-serif;
   font-size: 0.8125rem;
@@ -684,7 +762,7 @@ body #container #eightPage .eightPageCard .row:nth-child(2) .cardText-2 {
 body #container #ninePage {
   width: 100%;
   height: 40%;
-  padding: 40px 40px 60px 40px;
+  padding: 40px;
   background: rgba(0, 0, 0, 0.25) url("../images/bg-3.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -693,7 +771,7 @@ body #container #ninePage {
   /* background-attachment: fixed; */
   color: white;
 }
-body #container #ninePage .ninePageText {
+body #container #ninePage .section .ninePageText {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -711,23 +789,25 @@ body #container #ninePage .ninePageText {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-body #container #ninePage .ninePageText .text-1 {
+body #container #ninePage .section .ninePageText .text-1 {
   font-family: "Oswald", Sans-serif;
   font-size: 2.125rem;
-  line-height: 1.17em;
+  font-weight: 200;
+  line-height: 1.16em;
   margin-bottom: 20px;
 }
-body #container #ninePage .ninePageText .text-2 {
+body #container #ninePage .section .ninePageText .text-2 {
   font-family: "Karla", Sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.33em;
   margin-bottom: 28px;
 }
-body #container #ninePage .ninePageText .text-3 {
+body #container #ninePage .section .ninePageText .text-3 {
   color: white;
   font-family: "Karla", Sans-serif;
   font-size: 0.875rem;
+  font-weight: normal;
   letter-spacing: 2px;
   text-decoration: none;
   border: 1px solid white;
@@ -735,52 +815,70 @@ body #container #ninePage .ninePageText .text-3 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-body #container #ninePage .ninePageText .text-3:hover {
+body #container #ninePage .section .ninePageText .text-3:hover {
   background: white;
   color: black;
 }
 body #container #tenPage {
+  width: 100%;
+  background: #f5f2f0;
+}
+body #container #tenPage .section {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: #f5f2f0;
 }
-body #container #tenPage .row:nth-child(1) {
+body #container #tenPage .section .row:nth-child(1) {
   width: 100%;
   padding: 30px 30px 40px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-body #container #tenPage .row:nth-child(1) .col {
+body #container #tenPage .section .row:nth-child(1) .col {
   width: 100%;
   color: #777777;
+  font-family: "Karla", Sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.4em;
-  font-family: "Karla", Sans-serif;
   margin-bottom: 8px;
   padding-bottom: 8px;
 }
-body #container #tenPage .row:nth-child(1) .col .tenPageIcon {
+body #container #tenPage .section .row:nth-child(1) .col .tenPageIcon {
   width: 30px;
 }
-body #container #tenPage .row:nth-child(1) .col .tenPageIcon i {
+body #container #tenPage .section .row:nth-child(1) .col .tenPageIcon i {
   font-size: 24px;
   color: #bdb76b;
 }
-body #container #tenPage .row:nth-child(1) .col .tenPageText {
+body #container #tenPage .section .row:nth-child(1) .col .tenPageText {
   margin-left: 20px;
 }
-body #container #tenPage .row:nth-child(1) .col:nth-child(1) {
+body #container #tenPage .section .row:nth-child(1) .col:nth-child(1) {
   width: 100%;
   color: #404040;
-  font-size: 2rem;
-  margin-bottom: 20px;
   font-family: "Oswald", Sans-serif;
+  font-size: 2.125rem;
+  font-weight: 200;
+  line-height: 1.17em;
+  margin-bottom: 20px;
   text-align: center;
 }
-body #container #tenPage .row:nth-child(1) .col:nth-child(2) {
+body #container #tenPage .section .row:nth-child(1) .col:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -788,7 +886,7 @@ body #container #tenPage .row:nth-child(1) .col:nth-child(2) {
       -ms-flex-align: center;
           align-items: center;
 }
-body #container #tenPage .row:nth-child(1) .col:nth-child(3) {
+body #container #tenPage .section .row:nth-child(1) .col:nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -796,7 +894,7 @@ body #container #tenPage .row:nth-child(1) .col:nth-child(3) {
       -ms-flex-align: center;
           align-items: center;
 }
-body #container #tenPage .row:nth-child(1) .col:nth-child(4) {
+body #container #tenPage .section .row:nth-child(1) .col:nth-child(4) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -804,10 +902,10 @@ body #container #tenPage .row:nth-child(1) .col:nth-child(4) {
       -ms-flex-align: center;
           align-items: center;
 }
-body #container #tenPage .row:nth-child(1) .col:nth-child(4) .tenPageText div {
+body #container #tenPage .section .row:nth-child(1) .col:nth-child(4) .tenPageText div {
   font-weight: bolder;
 }
-body #container #tenPage .row:nth-child(1) .col:nth-child(5) {
+body #container #tenPage .section .row:nth-child(1) .col:nth-child(5) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,12 +913,12 @@ body #container #tenPage .row:nth-child(1) .col:nth-child(5) {
       -ms-flex-align: center;
           align-items: center;
 }
-body #container #tenPage .row:nth-child(2) {
+body #container #tenPage .section .row:nth-child(2) {
   position: relative;
   width: 100%;
   height: 420px;
 }
-body #container #tenPage .row:nth-child(2) iframe {
+body #container #tenPage .section .row:nth-child(2) iframe {
   pointer-events: none;
   width: 100%;
   height: 420px;
@@ -828,30 +926,37 @@ body #container #tenPage .row:nth-child(2) iframe {
           box-sizing: border-box;
   z-index: 1000002;
   border: 2px solid rgb(26, 115, 232);
+  -webkit-filter: brightness(100%) contrast(100%) saturate(47%) blur(0px) hue-rotate(0deg);
+          filter: brightness(100%) contrast(100%) saturate(47%) blur(0px) hue-rotate(0deg);
 }
 
 @media (min-width: 768px) {
-  body #container #navbar .navbarTitle {
+  body #container #navbar .section {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #container #navbar .section .navbarTitle {
     font-size: 30px;
   }
-  body #container #navbar .navbarBtn {
+  body #container #navbar .section .navbarBtn {
     width: 30%;
     text-align: center;
   }
-  body #container #navbar .navbarBtn button {
+  body #container #navbar .section .navbarBtn button {
     border: none;
     background: none;
     margin: 0 auto;
     cursor: pointer;
   }
-  body #container #navbar .navbarBtn button i {
+  body #container #navbar .section .navbarBtn button i {
     font-weight: 900;
     font-size: 24px;
   }
-  body #container #navbar .navbarMenu {
+  body #container #navbar .section .navbarMenu {
     display: none;
   }
-  body #container #navbar .navbarMenu a {
+  body #container #navbar .section .navbarMenu a {
     text-decoration: none;
     color: rgb(130, 105, 106);
   }
@@ -870,10 +975,10 @@ body #container #tenPage .row:nth-child(2) iframe {
     width: 189px;
     margin-bottom: 90px;
   }
-  body #container #secondPage {
+  body #container #secondPage .section {
     padding: 40px 0px 70px 0px;
   }
-  body #container #secondPage .secPageText {
+  body #container #secondPage .section .secPageText {
     width: 50%;
     padding: 0px 40px 0px 40px;
     -webkit-box-align: start;
@@ -884,68 +989,77 @@ body #container #tenPage .row:nth-child(2) iframe {
             justify-content: flex-start;
     text-align: left;
   }
-  body #container #secondPage .secPageText .text-1 {
+  body #container #secondPage .section .secPageText .text-1 {
     font-size: 1rem;
   }
-  body #container #secondPage .secPagePic {
+  body #container #secondPage .section .secPageText .text-5 {
+    width: auto;
+  }
+  body #container #secondPage .section .secPagePic {
     width: 50%;
   }
-  body #container #thirdPage {
+  body #container #thirdPage .section {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  body #container #thirdPage .thirdPageText {
+  body #container #thirdPage .section .thirdPageText {
     width: 50%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     text-align: left;
   }
-  body #container #thirdPage .thirdPageText .text-1 {
+  body #container #thirdPage .section .thirdPageText .text-1 {
     font-size: 1rem;
   }
-  body #container #thirdPage .thirdPageText .text-5 {
+  body #container #thirdPage .section .thirdPageText .text-5 {
     width: auto;
   }
-  body #container #thirdPage .thirdPagePic {
+  body #container #thirdPage .section .thirdPagePic {
     width: 50%;
-    height: 447px;
+    height: auto;
   }
   body #container #forthPage {
     padding: 80px 40px;
   }
-  body #container #forthPage .forthPageText .text-1 {
+  body #container #forthPage .section .forthPageText .text-1 {
     font-size: 3rem;
     line-height: 1.17em;
   }
-  body #container #forthPage .forthPageText .text-2 {
+  body #container #forthPage .section .forthPageText .text-2 {
     font-size: 1.25rem;
   }
-  body #container #fivePage .fivePageText {
+  body #container #fivePage .section {
     width: 50%;
+  }
+  body #container #fivePage .section .fivePageText {
     padding: 40px 40px 0px 40px;
   }
-  body #container #fivePage .fivePageText .text-1 {
+  body #container #fivePage .section .fivePageText .text-1 {
     margin: 0px -80px 20px 0px;
     padding: 0px 70px 0px 0px;
     border-width: 0px 10px 0px 0px;
   }
   body #container #fivePage .fivePagePic {
     width: 50%;
-    height: 217px;
+    height: auto;
+    margin-bottom: 0;
   }
-  body #container #sixPage .row .col .sixPagePic {
+  body #container #sixPage {
+    padding: 40px 0px 70px 0px;
+  }
+  body #container #sixPage .section .row .col .sixPagePic {
     max-width: 12%;
   }
-  body #container #sixPage .row .col .sixPagetext {
+  body #container #sixPage .section .row .col .sixPagetext {
     width: 78%;
   }
-  body #container #sixPage .row .col .sixPagetext h5 {
+  body #container #sixPage .section .row .col .sixPagetext h5 {
     font-size: 1.25rem;
   }
-  body #container #sixPage .row .col .sixPageMoney {
+  body #container #sixPage .section .row .col .sixPageMoney {
     font-size: 1.25rem;
     line-height: 1rem;
   }
@@ -955,57 +1069,286 @@ body #container #tenPage .row:nth-child(2) iframe {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  body #container #sevenPage .sevenPageText {
+  body #container #sevenPage .section {
     width: 50%;
+  }
+  body #container #sevenPage .section .sevenPageText {
+    width: 100%;
     margin: 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     text-align: left;
   }
-  body #container #sevenPage .sevenPageText .text-1 {
+  body #container #sevenPage .section .sevenPageText .text-1 {
     font-size: 1rem;
   }
-  body #container #sevenPage .sevenPageText .text-5 {
+  body #container #sevenPage .section .sevenPageText .text-5 {
     width: auto;
   }
   body #container #sevenPage .sevenPagePic {
     width: 50%;
-    height: 447px;
+    height: auto;
   }
   body #container #eightPage {
     padding: 50px 10px 50px 10px;
   }
-  body #container #eightPage .text-1 p {
+  body #container #eightPage .section .text-1 p {
     font-size: 1rem;
   }
-  body #container #eightPage .text-2 {
+  body #container #eightPage .section .text-2 {
     padding: 0px 40px 20px 40px;
   }
-  body #container #eightPage .text-2 p {
+  body #container #eightPage .section .text-2 p {
     margin-bottom: 0;
     font-size: 1rem;
   }
   body #container #ninePage {
-    padding: 40px 0px 40px 0px;
+    padding: 80px 40px;
   }
-  body #container #ninePage .ninePageText {
-    max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 30px;
+  body #container #ninePage .section .forthPageText .text-1 {
+    font-size: 3rem;
+    line-height: 1.17em;
   }
-  body #container #ninePage .ninePageText .text-2 {
+  body #container #ninePage .section .forthPageText .text-2 {
     font-size: 1.25rem;
   }
   body #container #tenPage {
     padding: 40px 0px 70px 0px;
     background: #f5f2f0;
   }
-  body #container #tenPage .row:nth-child(1) {
+  body #container #tenPage .section .row:nth-child(1) {
+    width: 50%;
+    padding: 40px;
+    margin-right: 10px;
+  }
+  body #container #tenPage .section .row:nth-child(1) .col h1 {
+    text-align: left;
+  }
+  body #container #tenPage .section .row:nth-child(2) {
+    width: calc(50% - 10px);
+  }
+}
+@media (min-width: 1024px) {
+  body #container #navbar {
+    height: 80px;
+  }
+  body #container #navbar .section {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #container #navbar .section .navbarTitle {
+    width: 30%;
+  }
+  body #container #navbar .section .navbarBtn {
+    display: none;
+  }
+  body #container #navbar .section .navbarMenu {
+    display: block;
+    width: 70%;
+  }
+  body #container #firstPage {
+    min-height: 98vh;
+    background-attachment: fixed;
+  }
+  body #container #secondPage .section {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 90px 0;
+  }
+  body #container #secondPage .section .secPageText {
+    width: calc(50% - 10px);
+    padding: 20px 80px 20px 80px;
+    margin-right: 10px;
+  }
+  body #container #secondPage .section .secPageText .text-2 {
+    font-size: 3rem;
+    line-height: 1.16em;
+  }
+  body #container #thirdPage .section .thirdPageText {
+    max-width: 510px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 90px 80px 90px 80px;
+  }
+  body #container #thirdPage .section .thirdPageText .text-2 {
+    font-size: 3rem;
+    line-height: 1.16em;
+  }
+  body #container #thirdPage .section .thirdPagePic {
+    height: auto;
+  }
+  body #container #forthPage {
+    background-attachment: fixed;
+    padding: 60px 0;
+  }
+  body #container #forthPage .section {
+    padding: 10px;
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #container #forthPage .section .forthPageText {
+    padding: 10px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+  }
+  body #container #forthPage .section .forthPageText .text-1 {
+    font-size: 4rem;
+    line-height: 1.16em;
+  }
+  body #container #forthPage .section .forthPageText .text-2 {
+    font-size: 1.25rem;
+  }
+  body #container #fivePage .section {
+    max-width: 510px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #container #fivePage .section .fivePageText {
+    padding: 90px 80px 0px 80px;
+  }
+  body #container #fivePage .section .fivePageText .text-1 {
+    margin: 0px -80px 20px 0px;
+    padding: 0px 70px 0px 0px;
+    border-width: 0px 10px 0px 0px;
+    font-size: 3rem;
+    line-height: 1.16em;
+  }
+  body #container #fivePage .fivePagePic {
+    width: 50%;
+    height: auto;
+  }
+  body #container #sixPage {
+    padding: 80px 0px 70px 0px;
+  }
+  body #container #sixPage .section {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #container #sixPage .section .row .col {
+    padding: 0px 0px 20px 80px;
+  }
+  body #container #sixPage .section .row .col .sixPagePic {
+    max-width: 20%;
+  }
+  body #container #sixPage .section .row .col .sixPagetext {
+    max-width: 70%;
+  }
+  body #container #sixPage .section .row .col .sixPageMoney {
+    max-width: 10%;
+  }
+  body #container #sixPage .section .row:nth-child(1) {
     width: 50%;
   }
-  body #container #tenPage .row:nth-child(2) {
+  body #container #sixPage .section .row:nth-child(2) {
     width: 50%;
+  }
+  body #container #sevenPage {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  body #container #sevenPage .section {
+    padding: 0;
+  }
+  body #container #sevenPage .section .sevenPageText {
+    padding: 90px 80px 90px 80px;
+  }
+  body #container #sevenPage .section .sevenPageText .text-2 {
+    font-size: 3rem;
+  }
+  body #container #sevenPage .section .sevenPageText .text-5 {
+    width: auto;
+  }
+  body #container #sevenPage .sevenPagePic {
+    height: auto;
+  }
+  body #container #eightPage {
+    padding: 40px 0px 80px 0px;
+  }
+  body #container #eightPage .section {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  body #container #eightPage .section .text-1 {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 30px 40px 30px;
+  }
+  body #container #eightPage .section .text-1 h1 {
+    font-size: 3rem;
+  }
+  body #container #eightPage .section .text-1 p {
+    font-size: 1.25rem;
+  }
+  body #container #eightPage .section .text-2 {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 30px 20px 30px;
+  }
+  body #container #eightPage .section .text-2 p {
+    font-size: 1.25rem;
+  }
+  body #container #eightPage .section .eightPageCard .row:nth-child(1) {
+    height: 80px;
+  }
+  body #container #eightPage .section .eightPageCard .row:nth-child(1) img {
+    width: 80px;
+  }
+  body #container #eightPage .section .eightPageCard .row:nth-child(2) {
+    height: 80px;
+  }
+  body #container #ninePage {
+    background-attachment: fixed;
+    padding: 60px 0;
+  }
+  body #container #ninePage .section {
+    padding: 10px;
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #container #ninePage .section .ninePageText {
+    padding: 10px;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+  }
+  body #container #ninePage .section .ninePageText .text-1 {
+    font-size: 4rem;
+    line-height: 1.16em;
+  }
+  body #container #ninePage .section .ninePageText .text-2 {
+    font-size: 1.25rem;
+  }
+  body #container #tenPage {
+    padding: 90px 0px;
+    background: #f5f2f0;
+  }
+  body #container #tenPage .section {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #container #tenPage .section .row:nth-child(1) {
+    padding: 20px 80px;
+  }
+  body #container #tenPage .section .row:nth-child(1) .col h1 {
+    font-size: 3rem;
+  }
+  body #container #tenPage .section .row:nth-child(2) {
+    width: calc(50% - 10px);
   }
 }

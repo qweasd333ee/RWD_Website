@@ -1,55 +1,76 @@
 body {
   width: 100%;
+  min-height: 100vh;
   #container {
     width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     #navbar {
       width: 100%;
       padding: 5px;
-      height: 70px;
+      height: 75px;
       position: fixed;
       display: flex;
       justify-content: space-between;
       align-items: center;
       background: rgba(255, 255, 255);
       box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-      .navbarTitle {
-        width: 70%;
-        font-size: 25px;
-        font-weight: 600;
-        color: rgb(87, 73, 74);
-        padding: 20px 5px;
-        font-family: 'Quintessential', Sans-serif;
-      }
-      .navbarBtn {
-        width: 30%;
-        text-align: center;
-        button {
-          border: none;
-          background: none;
-          margin: 0 auto;
-          cursor: pointer;
-          i {
-            font-weight: 900;
-            font-size: 24px;
+      .section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navbarTitle {
+          width: 70%;
+          font-size: 25px;
+          font-weight: 600;
+          color: rgb(87, 73, 74);
+          padding: 20px 5px;
+          font-family: 'Quintessential', Sans-serif;
+        }
+        .navbarBtn {
+          width: 30%;
+          text-align: center;
+          button {
+            border: none;
+            background: none;
+            margin: 0 auto;
+            cursor: pointer;
+            i {
+              font-weight: 900;
+              font-size: 24px;
+            }
           }
         }
-      }
-      .navbarMenu {
-        display: none;
-        a {
-          text-decoration: none;
-          color: rgb(130, 105, 106);
+        .navbarMenu {
+          width: 30%;
+          display: none;
+          font-size: medium;
+          text-align: right;
+          a {
+            font-family: 'Oswald', Sans-serif;
+            font-weight: 400;
+            text-decoration: none;
+            padding: 15px;
+            color: #836969;
+            &:hover {
+              color: black;
+              transition: 0.3s;
+            }
+            &:active {
+              color: black;
+            }
+          }
         }
       }
     }
     #firstPage {
       width: 100%;
-      height: 60%;
-      padding: 60px 0 60px 0;
-      display: flex;
+      min-height: 40vh;
+      padding: 60px 0;
       background: rgba(0, 0, 0, 0.35) url('../images/bg-1.jpeg');
+      display: flex;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -87,12 +108,12 @@ body {
             font-size: 2.125rem;
             line-height: 1.16em;
             margin-bottom: 20px;
-            font-weight: 400;
+            font-weight: 200;
           }
           .text-3 {
             font-size: 0.875rem;
             margin-bottom: 20px;
-            font-weight: 600;
+            font-weight: 400;
             letter-spacing: 5px;
           }
           .text-4 {
@@ -111,6 +132,7 @@ body {
             padding: 15px 30px;
             transition: all 0.3s;
             font-family: 'Karla', Sans-serif;
+            font-weight: normal;
             letter-spacing: 2px;
             &:hover {
               background: white;
@@ -123,152 +145,160 @@ body {
     #secondPage {
       width: 100%;
       background: rgba(255, 255, 255);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      .secPageText {
+      .section {
         width: 100%;
-        height: 50%;
-        padding: 30px 20px 40px 20px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        text-align: center;
-        .text-1 {
-          color: rgb(189, 183, 107);
-          font-family: 'Karla', Sans-serif;
-          font-size: 0.875rem;
-          margin-bottom: 20px;
-          line-height: 24px;
-        }
-        .text-2 {
-          color: #404040;
-          font-family: 'Oswald', Sans-serif;
-          font-size: 2rem;
-          line-height: 2.5rem;
-          margin-bottom: 20px;
-        }
-        .text-3 {
-          color: #7f7f7f;
-          font-family: 'Karla', Sans-serif;
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.5em;
-          margin-bottom: 20px;
-        }
-        .text-4 {
-          color: #7a7a7a;
-          font-family: 'Karla', Sans-serif;
-          font-size: 0.875rem;
-          font-weight: 400;
-          line-height: 1.5rem;
-          margin-bottom: 36px;
-        }
-        .text-5 {
-          width: 80%;
-          font-size: 0.875rem;
-          font-weight: 500;
-          text-decoration: none;
-          color: white;
-          background: rgb(189, 183, 107);
-          padding: 0.8rem 1.2rem;
-          transition: all 0.3s;
-          font-family: 'Karla', Sans-serif;
-          letter-spacing: 2px;
-          &:hover {
-            background: rgb(189, 183, 107, 0.53);
+        align-items: center;
+        flex-wrap: wrap;
+        .secPageText {
+          width: 100%;
+          height: 50%;
+          padding: 30px 20px 40px 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          .text-1 {
+            color: rgb(189, 183, 107);
+            font-family: 'Karla', Sans-serif;
+            font-size: 0.875rem;
+            font-weight: normal;
+            margin-bottom: 20px;
+            line-height: 24px;
+          }
+          .text-2 {
+            color: #404040;
+            font-family: 'Oswald', Sans-serif;
+            font-size: 2rem;
+            font-weight: 200;
+            line-height: 2.5rem;
+            margin-bottom: 20px;
+          }
+          .text-3 {
+            color: #7f7f7f;
+            font-family: 'Karla', Sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5em;
+            margin-bottom: 20px;
+          }
+          .text-4 {
+            color: #7a7a7a;
+            font-family: 'Karla', Sans-serif;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+            margin-bottom: 36px;
+          }
+          .text-5 {
+            width: 80%;
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: white;
+            background: rgb(189, 183, 107);
+            padding: 0.8rem 1.2rem;
+            transition: all 0.3s;
+            font-family: 'Karla', Sans-serif;
+            letter-spacing: 2px;
+            &:hover {
+              background: rgb(189, 183, 107, 0.53);
+            }
           }
         }
-      }
-      .secPagePic {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        .row {
-          width: 50%;
-          height: 100%;
-        }
-        img {
-          object-fit: cover;
-          display: block;
+        .secPagePic {
           width: 100%;
-          height: 100%;
-          padding: 2px;
+          height: 50%;
+          display: flex;
+          .row {
+            width: 50%;
+            height: 100%;
+          }
+          img {
+            object-fit: cover;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 2px;
+          }
         }
       }
     }
     #thirdPage {
       width: 100%;
       background: #f5f2f0;
-      display: flex;
-      flex-wrap: wrap;
-      .thirdPageText {
-        max-width: 510px;
-        margin: auto;
-        height: 50%;
-        padding: 40px 30px;
+      .section {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        .text-1 {
-          color: rgb(189, 183, 107);
-          font-family: 'Karla', Sans-serif;
-          font-size: 0.875rem;
-          margin-bottom: 20px;
-          line-height: 24px;
-          letter-spacing: 0.5px;
-          font-weight: 500;
-        }
-        .text-2 {
-          color: #404040;
-          font-family: 'Oswald', Sans-serif;
-          font-size: 2.125rem;
-          line-height: 2.5rem;
-          margin-bottom: 20px;
-        }
-        .text-3 {
-          color: #7f7f7f;
-          font-family: 'Karla', Sans-serif;
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.5em;
-          margin-bottom: 20px;
-        }
-        .text-4 {
-          color: #7a7a7a;
-          font-family: 'Karla', Sans-serif;
-          font-size: 0.875rem;
-          font-weight: 400;
-          line-height: 1.5rem;
-          margin-bottom: 36px;
-        }
-        .text-5 {
-          width: 80%;
-          font-size: 0.875rem;
-          font-weight: 500;
-          text-decoration: none;
-          color: white;
-          background: rgb(189, 183, 107);
-          padding: 0.8rem 1.2rem;
-          transition: all 0.3s;
-          font-family: 'Karla', Sans-serif;
-          letter-spacing: 2px;
-          &:hover {
-            background: rgb(189, 183, 107, 0.53);
+        flex-wrap: wrap;
+        .thirdPageText {
+          max-width: 510px;
+          margin: auto;
+          padding: 40px 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          .text-1 {
+            color: rgb(189, 183, 107);
+            font-family: 'Karla', Sans-serif;
+            font-size: 0.875rem;
+            font-weight: normal;
+            margin-bottom: 20px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+          }
+          .text-2 {
+            color: #404040;
+            font-family: 'Oswald', Sans-serif;
+            font-size: 2.125rem;
+            font-weight: 200;
+            line-height: 2.5rem;
+            margin-bottom: 20px;
+          }
+          .text-3 {
+            color: #7f7f7f;
+            font-family: 'Karla', Sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5em;
+            margin-bottom: 20px;
+          }
+          .text-4 {
+            color: #7a7a7a;
+            font-family: 'Karla', Sans-serif;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+            margin-bottom: 36px;
+          }
+          .text-5 {
+            width: 80%;
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: white;
+            background: rgb(189, 183, 107);
+            padding: 0.8rem 1.2rem;
+            transition: all 0.3s;
+            font-family: 'Karla', Sans-serif;
+            letter-spacing: 2px;
+            &:hover {
+              background: rgb(189, 183, 107, 0.53);
+            }
           }
         }
-      }
-      .thirdPagePic {
-        width: 100%;
-        height: 200px;
-        background: url('../images/pic-5.jpeg');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        .thirdPagePic {
+          width: 100%;
+          height: 200px;
+          background: url('../images/pic-5.jpeg');
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
       }
     }
     #forthPage {
@@ -282,40 +312,43 @@ body {
       background-blend-mode: darken;
       /* background-attachment: fixed; */
       color: white;
-      .forthPageText {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        .text-1 {
-          font-family: 'Oswald', Sans-serif;
-          font-size: 2.125rem;
-          line-height: 1.16em;
-          margin-bottom: 20px;
-        }
-        .text-2 {
-          font-family: 'Karla', Sans-serif;
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.33em;
-          margin-bottom: 28px;
-        }
-        .text-3 {
-          color: white;
-          font-family: 'Karla', Sans-serif;
-          font-size: 0.875rem;
-          letter-spacing: 2px;
-          text-decoration: none;
-          border: 1px solid white;
-          padding: 15px 30px;
-          transition: all 0.3s;
-
-          &:hover {
-            background: white;
-            color: black;
+      .section {
+        .forthPageText {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .text-1 {
+            font-family: 'Oswald', Sans-serif;
+            font-size: 2.125rem;
+            font-weight: 200;
+            line-height: 1.16em;
+            margin-bottom: 20px;
+          }
+          .text-2 {
+            font-family: 'Karla', Sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.33em;
+            margin-bottom: 28px;
+          }
+          .text-3 {
+            color: white;
+            font-family: 'Karla', Sans-serif;
+            font-size: 0.875rem;
+            font-weight: normal;
+            letter-spacing: 2px;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 15px 30px;
+            transition: all 0.3s;
+            &:hover {
+              background: white;
+              color: black;
+            }
           }
         }
       }
@@ -325,25 +358,32 @@ body {
       background: #ffffff;
       display: flex;
       flex-wrap: wrap;
-      .fivePageText {
+      .section {
         width: 100%;
-        padding: 40px 30px;
-        text-align: left;
-        .text-1 {
-          color: #404040;
-          font-family: 'Oswald', Sans-serif;
-          font-size: 2.2rem;
-          line-height: 1.17;
-          border-left: solid 8px #9ccc65;
-          padding: 0 0 0 22px;
-          margin: 0 0 20px -30px;
-        }
-        .text-2 {
-          color: #7a7a7a;
-          font-family: 'Karla', Sans-serif;
-          font-size: 1rem;
-          line-height: 1.5;
-          margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        .fivePageText {
+          width: 100%;
+          padding: 40px 30px;
+          text-align: left;
+          .text-1 {
+            color: #404040;
+            font-family: 'Oswald', Sans-serif;
+            font-size: 2.2rem;
+            font-weight: 200;
+            line-height: 1.17;
+            border-left: solid 8px #9ccc65;
+            padding: 0 0 0 22px;
+            margin: 0 0 20px -30px;
+          }
+          .text-2 {
+            color: #7a7a7a;
+            font-family: 'Karla', Sans-serif;
+            font-size: 1rem;
+            font-weight: normal;
+            line-height: 1.5;
+            margin-bottom: 20px;
+          }
         }
       }
       .fivePagePic {
@@ -358,41 +398,49 @@ body {
     }
     #sixPage {
       width: 100%;
-      .row {
+      .section {
         width: 100%;
-        .col {
+        display: flex;
+        flex-wrap: wrap;
+        .row {
           width: 100%;
-          padding: 0 20px 20px 20px;
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          font-family: 'Karla', Sans-serif;
-          .sixPagePic {
-            max-width: 26%;
-            border-radius: 50%;
-          }
-          .sixPagetext {
-            width: 65%;
-            margin-top: 4px;
-            padding-left: 20px;
-            h5 {
-              color: rgba(0, 0, 0, 0.8);
+          .col {
+            width: 100%;
+            padding: 0 20px 20px 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: 'Karla', Sans-serif;
+            .sixPagePic {
+              max-width: 26%;
+              border-radius: 50%;
+            }
+            .sixPagetext {
+              width: 65%;
+              margin-top: 4px;
+              padding-left: 20px;
+              h5 {
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 1rem;
+                font-weight: normal;
+                line-height: 1.33rem;
+                margin-bottom: 4px;
+              }
+              p {
+                color: rgba(0, 0, 0, 0.54);
+                font-size: 0.875rem;
+                font-weight: normal;
+                line-height: 1.5;
+              }
+            }
+            .sixPageMoney {
               font-size: 1rem;
-              line-height: 1.33rem;
-              margin-bottom: 4px;
+              font-weight: normal;
+              line-height: 1.33em;
+              text-align: right;
+              width: 10%;
+              color: rgba(0, 0, 0, 0.8);
             }
-            p {
-              color: rgba(0, 0, 0, 0.54);
-              font-size: 0.875rem;
-              line-height: 1.5;
-            }
-          }
-          .sixPageMoney {
-            font-size: 1rem;
-            line-height: 1.33em;
-            text-align: right;
-            width: 10%;
-            color: rgba(0, 0, 0, 0.8);
           }
         }
       }
@@ -402,59 +450,67 @@ body {
       background: #f5f2f0;
       display: flex;
       flex-wrap: wrap;
-      .sevenPageText {
-        width: 100%;
-        height: 50%;
-        margin: 0 14px;
-        padding: 40px 30px;
+      .section {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        text-align: center;
-        .text-1 {
-          color: rgb(189, 183, 107);
-          font-family: 'Karla', Sans-serif;
-          font-size: 0.875rem;
-          margin-bottom: 20px;
-          line-height: 24px;
-        }
-        .text-2 {
-          color: #404040;
-          font-family: 'Oswald', Sans-serif;
-          font-size: 2rem;
-          line-height: 2.5rem;
-          margin-bottom: 20px;
-        }
-        .text-3 {
-          color: #7f7f7f;
-          font-family: 'Karla', Sans-serif;
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.5em;
-          margin-bottom: 20px;
-        }
-        .text-4 {
-          color: #7a7a7a;
-          font-family: 'Karla', Sans-serif;
-          font-size: 0.875rem;
-          font-weight: 400;
-          line-height: 1.5rem;
-          margin-bottom: 36px;
-        }
-        .text-5 {
-          width: 80%;
-          font-size: 0.875rem;
-          font-weight: 500;
-          text-decoration: none;
-          color: white;
-          background: rgb(189, 183, 107);
-          padding: 0.8rem 1.2rem;
-          transition: all 0.3s;
-          font-family: 'Karla', Sans-serif;
-          letter-spacing: 2px;
-          &:hover {
-            background: rgb(189, 183, 107, 0.53);
+        align-items: center;
+        max-width: 510px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px;
+        .sevenPageText {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          .text-1 {
+            color: rgb(189, 183, 107);
+            font-family: 'Karla', Sans-serif;
+            font-size: 0.875rem;
+            font-weight: normal;
+            margin-bottom: 20px;
+            line-height: 24px;
+          }
+          .text-2 {
+            color: #404040;
+            font-family: 'Oswald', Sans-serif;
+            font-size: 2.125rem;
+            font-weight: 200;
+            line-height: 1.17em;
+            margin-bottom: 20px;
+          }
+          .text-3 {
+            color: #7f7f7f;
+            font-family: 'Karla', Sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5em;
+            margin-bottom: 20px;
+          }
+          .text-4 {
+            color: #7a7a7a;
+            font-family: 'Karla', Sans-serif;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+            margin-bottom: 36px;
+          }
+          .text-5 {
+            width: 80%;
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: white;
+            background: rgb(189, 183, 107);
+            padding: 0.8rem 1.2rem;
+            transition: all 0.3s;
+            font-family: 'Karla', Sans-serif;
+            letter-spacing: 2px;
+            &:hover {
+              background: rgb(189, 183, 107, 0.53);
+            }
           }
         }
       }
@@ -469,98 +525,102 @@ body {
     }
     #eightPage {
       width: 100%;
-      display: flex;
-      flex-wrap: wrap;
       padding: 30px 10px 50px 10px;
-      .text-1 {
-        width: 100%;
-        padding: 0 20px 10px 20px;
-        text-align: center;
-        h1 {
-          width: 100%;
-          color: #404040;
-          font-size: 2.125rem;
-          line-height: 1.17em;
-          margin-bottom: 20px;
-          font-family: 'Oswald', Sans-serif;
-        }
-        p {
-          width: 100%;
-          color: rgba(0, 0, 0, 0.54);
-          font-size: 0.875rem;
-          line-height: 1.5em;
-          font-weight: 500;
-          margin-bottom: 20px;
-          font-family: 'Karla', Sans-serif;
-        }
-      }
-      .carousel {
-        width: 100%;
-        margin-bottom: 20px;
-        img {
-          width: 100%;
-          padding: 0 10px;
-        }
-        .slick-prev {
-          left: 4%;
-          z-index: 1000;
-        }
-        .slick-next {
-          left: 92%;
-        }
-      }
-      .text-2 {
-        padding: 0 20px 20px 20px;
-        text-align: center;
-        p {
-          margin-bottom: 20px;
-          font-size: 0.875rem;
-          line-height: 1.5em;
-          font-weight: 400;
-          color: #777777;
-          font-family: 'Karla', Sans-serif;
-          font-style: italic;
-        }
-      }
-      .eightPageCard {
+      .section {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        .row:nth-child(1) {
-          width: 50%;
-          height: 64px;
-          text-align: right;
-          padding-right: 8px;
-          img {
-            width: 64px;
-            border-radius: 50%;
+        .text-1 {
+          width: 100%;
+          padding: 0 20px 10px 20px;
+          text-align: center;
+          h1 {
+            width: 100%;
+            color: #404040;
+            font-size: 2.125rem;
+            font-weight: 200;
+            line-height: 1.16em;
+            margin-bottom: 20px;
+            font-family: 'Oswald', Sans-serif;
+          }
+          p {
+            width: 100%;
+            color: rgba(0, 0, 0, 0.54);
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 1.5em;
+            margin-bottom: 20px;
+            font-family: 'Karla', Sans-serif;
           }
         }
-        .row:nth-child(2) {
-          width: 50%;
-          height: 64px;
-          text-align: left;
-          padding-left: 8px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: flex-start;
-          .cardText-1 {
-            color: rgba(0, 0, 0, 0.7);
-            font-family: 'Karla', Sans-serif;
-            font-size: 1rem;
-            font-weight: bold;
-            line-height: 24px;
-            letter-spacing: -0.3px;
+        .carousel {
+          width: 100%;
+          margin-bottom: 20px;
+          img {
+            width: 100%;
+            padding: 0 10px;
           }
-          .cardText-2 {
-            color: #999999;
+          .slick-prev {
+            left: 4%;
+            z-index: 1000;
+          }
+          .slick-next {
+            left: 92%;
+          }
+        }
+        .text-2 {
+          padding: 0 20px 20px 20px;
+          text-align: center;
+          p {
+            margin-bottom: 20px;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.5em;
+            color: #777777;
             font-family: 'Karla', Sans-serif;
-            font-size: 0.8125rem;
-            font-weight: normal;
-            line-height: 24px;
-            letter-spacing: -0.3px;
+            font-style: italic;
+          }
+        }
+        .eightPageCard {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          .row:nth-child(1) {
+            width: 50%;
+            height: 64px;
+            text-align: right;
+            padding-right: 8px;
+            img {
+              width: 64px;
+              border-radius: 50%;
+            }
+          }
+          .row:nth-child(2) {
+            width: 50%;
+            height: 64px;
+            text-align: left;
+            padding-left: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            .cardText-1 {
+              color: rgba(0, 0, 0, 0.7);
+              font-family: 'Karla', Sans-serif;
+              font-size: 1rem;
+              font-weight: bold;
+              line-height: 24px;
+              letter-spacing: -0.3px;
+            }
+            .cardText-2 {
+              color: #999999;
+              font-family: 'Karla', Sans-serif;
+              font-size: 0.8125rem;
+              font-weight: normal;
+              line-height: 24px;
+              letter-spacing: -0.3px;
+            }
           }
         }
       }
@@ -568,121 +628,136 @@ body {
     #ninePage {
       width: 100%;
       height: 40%;
-      padding: 40px 40px 60px 40px;
+      padding: 40px;
       background: rgba(0, 0, 0, 0.25) url('../images/bg-3.jpg');
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
       background-blend-mode: darken;
+
       /* background-attachment: fixed; */
       color: white;
-      .ninePageText {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        .text-1 {
-          font-family: 'Oswald', Sans-serif;
-          font-size: 2.125rem;
-          line-height: 1.17em;
-          margin-bottom: 20px;
-        }
-        .text-2 {
-          font-family: 'Karla', Sans-serif;
-          font-size: 1rem;
-          font-weight: 500;
-          line-height: 1.33em;
-          margin-bottom: 28px;
-        }
-        .text-3 {
-          color: white;
-          font-family: 'Karla', Sans-serif;
-          font-size: 0.875rem;
-          letter-spacing: 2px;
-          text-decoration: none;
-          border: 1px solid white;
-          padding: 15px 30px;
-          transition: all 0.3s;
-
-          &:hover {
-            background: white;
-            color: black;
+      .section {
+        .ninePageText {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .text-1 {
+            font-family: 'Oswald', Sans-serif;
+            font-size: 2.125rem;
+            font-weight: 200;
+            line-height: 1.16em;
+            margin-bottom: 20px;
+          }
+          .text-2 {
+            font-family: 'Karla', Sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.33em;
+            margin-bottom: 28px;
+          }
+          .text-3 {
+            color: white;
+            font-family: 'Karla', Sans-serif;
+            font-size: 0.875rem;
+            font-weight: normal;
+            letter-spacing: 2px;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 15px 30px;
+            transition: all 0.3s;
+            &:hover {
+              background: white;
+              color: black;
+            }
           }
         }
       }
     }
     #tenPage {
       width: 100%;
-      display: flex;
-      flex-wrap: wrap;
       background: #f5f2f0;
-      .row:nth-child(1) {
+      .section {
         width: 100%;
-        padding: 30px 30px 40px 30px;
-        .col {
+        display: flex;
+        flex-wrap: wrap;
+        .row:nth-child(1) {
           width: 100%;
-          color: #777777;
-          font-size: 1rem;
-          font-weight: normal;
-          line-height: 1.4em;
-          font-family: 'Karla', Sans-serif;
-          margin-bottom: 8px;
-          padding-bottom: 8px;
-          .tenPageIcon {
-            width: 30px;
-            i {
-              font-size: 24px;
-              color: #bdb76b;
+          padding: 30px 30px 40px 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .col {
+            width: 100%;
+            color: #777777;
+            font-family: 'Karla', Sans-serif;
+            font-size: 1rem;
+            font-weight: normal;
+            line-height: 1.4em;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            .tenPageIcon {
+              width: 30px;
+              i {
+                font-size: 24px;
+                color: #bdb76b;
+              }
+            }
+            .tenPageText {
+              margin-left: 20px;
             }
           }
-          .tenPageText {
-            margin-left: 20px;
+          .col:nth-child(1) {
+            width: 100%;
+            color: #404040;
+            font-family: 'Oswald', Sans-serif;
+            font-size: 2.125rem;
+            font-weight: 200;
+            line-height: 1.17em;
+            margin-bottom: 20px;
+            text-align: center;
           }
-        }
-        .col:nth-child(1) {
-          width: 100%;
-          color: #404040;
-          font-size: 2rem;
-          margin-bottom: 20px;
-          font-family: 'Oswald', Sans-serif;
-          text-align: center;
-        }
-        .col:nth-child(2) {
-          display: flex;
-          align-items: center;
-        }
-        .col:nth-child(3) {
-          display: flex;
-          align-items: center;
-        }
-        .col:nth-child(4) {
-          display: flex;
-          align-items: center;
-          .tenPageText {
-            div {
-              font-weight: bolder;
+          .col:nth-child(2) {
+            display: flex;
+            align-items: center;
+          }
+          .col:nth-child(3) {
+            display: flex;
+            align-items: center;
+          }
+          .col:nth-child(4) {
+            display: flex;
+            align-items: center;
+            .tenPageText {
+              div {
+                font-weight: bolder;
+              }
             }
           }
+          .col:nth-child(5) {
+            display: flex;
+            align-items: center;
+          }
         }
-        .col:nth-child(5) {
-          display: flex;
-          align-items: center;
-        }
-      }
-      .row:nth-child(2) {
-        position: relative;
-        width: 100%;
-        height: 420px;
-        iframe {
-          pointer-events: none;
+        .row:nth-child(2) {
+          position: relative;
           width: 100%;
           height: 420px;
-          box-sizing: border-box;
-          z-index: 1000002;
-          border: 2px solid rgb(26, 115, 232);
+          iframe {
+            pointer-events: none;
+            width: 100%;
+            height: 420px;
+            box-sizing: border-box;
+            z-index: 1000002;
+            border: 2px solid rgb(26, 115, 232);
+            filter: brightness( 100% ) contrast( 100% ) saturate( 47% ) blur( 0px ) hue-rotate( 0deg );
+
+          }
         }
       }
     }
@@ -693,28 +768,33 @@ body {
   body {
     #container {
       #navbar {
-        .navbarTitle {
-          font-size: 30px;
-        }
-        .navbarBtn {
-          width: 30%;
-          text-align: center;
-          button {
-            border: none;
-            background: none;
-            margin: 0 auto;
-            cursor: pointer;
-            i {
-              font-weight: 900;
-              font-size: 24px;
+        .section {
+          max-width: 1024px;
+          margin-left: auto;
+          margin-right: auto;
+          .navbarTitle {
+            font-size: 30px;
+          }
+          .navbarBtn {
+            width: 30%;
+            text-align: center;
+            button {
+              border: none;
+              background: none;
+              margin: 0 auto;
+              cursor: pointer;
+              i {
+                font-weight: 900;
+                font-size: 24px;
+              }
             }
           }
-        }
-        .navbarMenu {
-          display: none;
-          a {
-            text-decoration: none;
-            color: rgb(130, 105, 106);
+          .navbarMenu {
+            display: none;
+            a {
+              text-decoration: none;
+              color: rgb(130, 105, 106);
+            }
           }
         }
       }
@@ -740,139 +820,409 @@ body {
         }
       }
       #secondPage {
-        padding: 40px 0px 70px 0px;
-        .secPageText {
-          width: 50%;
-          padding: 0px 40px 0px 40px;
-          align-items: flex-start;
-          justify-content: flex-start;
-          text-align: left;
-          .text-1 {
-            font-size: 1rem;
+        .section {
+          padding: 40px 0px 70px 0px;
+          .secPageText {
+            width: 50%;
+            padding: 0px 40px 0px 40px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-align: left;
+            .text-1 {
+              font-size: 1rem;
+            }
+            .text-5 {
+              width: auto;
+            }
           }
-        }
-        .secPagePic {
-          width: 50%;
+          .secPagePic {
+            width: 50%;
+          }
         }
       }
       #thirdPage {
-        flex-direction: row-reverse;
-        .thirdPageText {
-          width: 50%;
-          align-items: flex-start;
-          text-align: left;
-          .text-1 {
-            font-size: 1rem;
+        .section {
+          flex-direction: row-reverse;
+          .thirdPageText {
+            width: 50%;
+            align-items: flex-start;
+            text-align: left;
+            .text-1 {
+              font-size: 1rem;
+            }
+            .text-5 {
+              width: auto;
+            }
           }
-          .text-5 {
-            width: auto;
+          .thirdPagePic {
+            width: 50%;
+            height: auto;
           }
-        }
-        .thirdPagePic {
-          width: 50%;
-          height: 447px;
         }
       }
       #forthPage {
         padding: 80px 40px;
-        .forthPageText {
-          .text-1 {
-            font-size: 3rem;
-            line-height: 1.17em;
-          }
-          .text-2 {
-            font-size: 1.25rem;
+        .section {
+          .forthPageText {
+            .text-1 {
+              font-size: 3rem;
+              line-height: 1.17em;
+            }
+            .text-2 {
+              font-size: 1.25rem;
+            }
           }
         }
       }
       #fivePage {
-        .fivePageText {
+        .section {
           width: 50%;
-          padding: 40px 40px 0px 40px;
-          .text-1 {
-            margin: 0px -80px 20px 0px;
-            padding: 0px 70px 0px 0px;
-            border-width: 0px 10px 0px 0px;
+          .fivePageText {
+            padding: 40px 40px 0px 40px;
+            .text-1 {
+              margin: 0px -80px 20px 0px;
+              padding: 0px 70px 0px 0px;
+              border-width: 0px 10px 0px 0px;
+            }
           }
         }
         .fivePagePic {
           width: 50%;
-          height: 217px;
+          height: auto;
+          margin-bottom: 0;
         }
       }
       #sixPage {
-        .row {
-          .col {
-            .sixPagePic {
-              max-width: 12%;
-            }
-            .sixPagetext {
-              width: 78%;
-              h5 {
-                font-size: 1.25rem;
+        padding: 40px 0px 70px 0px;
+        .section {
+          .row {
+            .col {
+              .sixPagePic {
+                max-width: 12%;
               }
-            }
-            .sixPageMoney {
-              font-size: 1.25rem;
-              line-height: 1rem;
+              .sixPagetext {
+                width: 78%;
+                h5 {
+                  font-size: 1.25rem;
+                }
+              }
+              .sixPageMoney {
+                font-size: 1.25rem;
+                line-height: 1rem;
+              }
             }
           }
         }
       }
       #sevenPage {
         flex-direction: row-reverse;
-        .sevenPageText {
+        .section {
           width: 50%;
-          margin: 0;
-          align-items: flex-start;
-          text-align: left;
-          .text-1 {
-            font-size: 1rem;
-          }
-          .text-5 {
-            width: auto;
+          .sevenPageText {
+            width: 100%;
+            margin: 0;
+            align-items: flex-start;
+            text-align: left;
+            .text-1 {
+              font-size: 1rem;
+            }
+            .text-5 {
+              width: auto;
+            }
           }
         }
         .sevenPagePic {
           width: 50%;
-          height: 447px;
+          height: auto;
         }
       }
       #eightPage {
         padding: 50px 10px 50px 10px;
-        .text-1 {
-          p {
-            font-size: 1rem;
+        .section {
+          .text-1 {
+            p {
+              font-size: 1rem;
+            }
           }
-        }
-        .text-2 {
-          padding: 0px 40px 20px 40px;
-          p {
-            margin-bottom: 0;
-            font-size: 1rem;
+          .text-2 {
+            padding: 0px 40px 20px 40px;
+            p {
+              margin-bottom: 0;
+              font-size: 1rem;
+            }
           }
         }
       }
       #ninePage {
-        padding: 40px 0px 40px 0px;
-        .ninePageText {
-          max-width: 760px;
-          margin-left: auto;
-          margin-right: auto;
-          padding: 40px 30px;
-          .text-2 {
-            font-size: 1.25rem;
+        padding: 80px 40px;
+        .section {
+          .forthPageText {
+            .text-1 {
+              font-size: 3rem;
+              line-height: 1.17em;
+            }
+            .text-2 {
+              font-size: 1.25rem;
+            }
           }
         }
       }
       #tenPage {
         padding: 40px 0px 70px 0px;
         background: #f5f2f0;
-        .row:nth-child(1) {
-          width: 50%;
+        .section {
+          .row:nth-child(1) {
+            width: 50%;
+            padding: 40px;
+            margin-right: 10px;
+            .col {
+              h1 {
+                text-align: left;
+              }
+            }
+          }
+          .row:nth-child(2) {
+            width: calc(50% - 10px);
+          }
         }
-        .row:nth-child(2) {
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    #container {
+      #navbar {
+        height: 80px;
+        .section {
+          max-width: 1140px;
+          margin-left: auto;
+          margin-right: auto;
+          .navbarTitle {
+            width: 30%;
+          }
+          .navbarBtn {
+            display: none;
+          }
+          .navbarMenu {
+            display: block;
+            width: 70%;
+          }
+        }
+      }
+      #firstPage {
+        min-height: 98vh;
+        background-attachment: fixed;
+      }
+      #secondPage {
+        .section {
+          max-width: 1020px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 90px 0;
+          .secPageText {
+            width: calc(50% - 10px);
+            padding: 20px 80px 20px 80px;
+            margin-right: 10px;
+            .text-2 {
+              font-size: 3rem;
+              line-height: 1.16em;
+            }
+          }
+        }
+      }
+      #thirdPage {
+        .section {
+          .thirdPageText {
+            max-width: 510px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 90px 80px 90px 80px;
+            .text-2 {
+              font-size: 3rem;
+              line-height: 1.16em;
+            }
+          }
+          .thirdPagePic {
+            height: auto;
+          }
+        }
+      }
+      #forthPage {
+        background-attachment: fixed;
+        padding: 60px 0;
+        .section {
+          padding: 10px;
+          max-width: 1020px;
+          margin-left: auto;
+          margin-right: auto;
+          .forthPageText {
+            padding: 10px;
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            .text-1 {
+              font-size: 4rem;
+              line-height: 1.16em;
+            }
+            .text-2 {
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+      #fivePage {
+        .section {
+          max-width: 510px;
+          margin-left: auto;
+          margin-right: auto;
+          .fivePageText {
+            padding: 90px 80px 0px 80px;
+            .text-1 {
+              margin: 0px -80px 20px 0px;
+              padding: 0px 70px 0px 0px;
+              border-width: 0px 10px 0px 0px;
+              font-size: 3rem;
+              line-height: 1.16em;
+            }
+          }
+        }
+        .fivePagePic {
           width: 50%;
+          height: auto;
+        }
+      }
+      #sixPage {
+        padding: 80px 0px 70px 0px;
+        .section {
+          max-width: 1020px;
+          margin-left: auto;
+          margin-right: auto;
+          .row {
+            .col {
+              padding: 0px 0px 20px 80px;
+              .sixPagePic {
+                max-width: 20%;
+              }
+              .sixPagetext {
+                max-width: 70%;
+              }
+              .sixPageMoney {
+                max-width: 10%;
+              }
+            }
+          }
+          .row:nth-child(1) {
+            width: 50%;
+          }
+          .row:nth-child(2) {
+            width: 50%;
+          }
+        }
+      }
+      #sevenPage {
+        flex-direction: row-reverse;
+        .section {
+          padding: 0;
+          .sevenPageText {
+            padding: 90px 80px 90px 80px;
+            .text-2 {
+              font-size: 3rem;
+            }
+            .text-5 {
+              width: auto;
+            }
+          }
+        }
+        .sevenPagePic {
+          height: auto;
+        }
+      }
+      #eightPage {
+        padding: 40px 0px 80px 0px;
+        .section {
+          max-width: 1020px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 10px;
+          .text-1 {
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px 30px 40px 30px;
+            h1 {
+              font-size: 3rem;
+            }
+            p {
+              font-size: 1.25rem;
+            }
+          }
+          .text-2 {
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px 30px 20px 30px;
+            p {
+              font-size: 1.25rem;
+            }
+          }
+          .eightPageCard {
+            .row:nth-child(1) {
+              height: 80px;
+              img {
+                width: 80px;
+              }
+            }
+            .row:nth-child(2) {
+              height: 80px;
+            }
+          }
+        }
+      }
+      #ninePage {
+        background-attachment: fixed;
+        padding: 60px 0;
+        .section {
+          padding: 10px;
+          max-width: 1020px;
+          margin-left: auto;
+          margin-right: auto;
+          .ninePageText {
+            padding: 10px;
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            .text-1 {
+              font-size: 4rem;
+              line-height: 1.16em;
+            }
+            .text-2 {
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+      #tenPage {
+        padding: 90px 0px;
+        background: #f5f2f0;
+        .section {
+          max-width: 1020px;
+          margin-left: auto;
+          margin-right: auto;
+          .row:nth-child(1) {
+            padding: 20px 80px;
+            .col {
+              h1 {
+                font-size: 3rem;
+              }
+            }
+          }
+          .row:nth-child(2) {
+            width: calc(50% - 10px);
+          }
         }
       }
     }
