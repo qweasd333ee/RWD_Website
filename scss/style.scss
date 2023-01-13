@@ -44,11 +44,20 @@ body {
           }
         }
         .navbarMenu {
-          width: 30%;
-          display: none;
+          width: 100%;
+          position: absolute;
+          top: 76px;
+          left: 0;
           font-size: medium;
-          text-align: right;
+          text-align: left;
+          z-index: 1000;
           a {
+            display: block;
+            width: 100%;
+            background: white;
+            border-bottom-style: solid;
+            border-bottom-color: #c4c4c4;
+            border-bottom-width: 1px;
             font-family: 'Oswald', Sans-serif;
             font-weight: 400;
             text-decoration: none;
@@ -58,7 +67,7 @@ body {
               color: black;
               transition: 0.3s;
             }
-            &:active {
+            &.active {
               color: black;
             }
           }
@@ -556,6 +565,7 @@ body {
         .carousel {
           width: 100%;
           margin-bottom: 20px;
+          z-index: 100;
           img {
             width: 100%;
             padding: 0 10px;
@@ -755,8 +765,7 @@ body {
             box-sizing: border-box;
             z-index: 1000002;
             border: 2px solid rgb(26, 115, 232);
-            filter: brightness( 100% ) contrast( 100% ) saturate( 47% ) blur( 0px ) hue-rotate( 0deg );
-
+            filter: brightness(100%) contrast(100%) saturate(47%) blur(0px) hue-rotate(0deg);
           }
         }
       }
@@ -787,13 +796,6 @@ body {
                 font-weight: 900;
                 font-size: 24px;
               }
-            }
-          }
-          .navbarMenu {
-            display: none;
-            a {
-              text-decoration: none;
-              color: rgb(130, 105, 106);
             }
           }
         }
@@ -1006,13 +1008,20 @@ body {
             display: none;
           }
           .navbarMenu {
-            display: block;
             width: 70%;
+            position: static;
+            display: block;
+            text-align: right;
+            a {
+              display: inline;
+              background: none;
+              border: 0;
+            }
           }
         }
       }
       #firstPage {
-        min-height: 98vh;
+        min-height: 100vh;
         background-attachment: fixed;
       }
       #secondPage {
@@ -1227,4 +1236,12 @@ body {
       }
     }
   }
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
 }

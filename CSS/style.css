@@ -66,12 +66,21 @@ body #container #navbar .section .navbarBtn button i {
   font-size: 24px;
 }
 body #container #navbar .section .navbarMenu {
-  width: 30%;
-  display: none;
+  width: 100%;
+  position: absolute;
+  top: 76px;
+  left: 0;
   font-size: medium;
-  text-align: right;
+  text-align: left;
+  z-index: 1000;
 }
 body #container #navbar .section .navbarMenu a {
+  display: block;
+  width: 100%;
+  background: white;
+  border-bottom-style: solid;
+  border-bottom-color: #c4c4c4;
+  border-bottom-width: 1px;
   font-family: "Oswald", Sans-serif;
   font-weight: 400;
   text-decoration: none;
@@ -83,7 +92,7 @@ body #container #navbar .section .navbarMenu a:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-body #container #navbar .section .navbarMenu a:active {
+body #container #navbar .section .navbarMenu a.active {
   color: black;
 }
 body #container #firstPage {
@@ -678,6 +687,7 @@ body #container #eightPage .section .text-1 p {
 body #container #eightPage .section .carousel {
   width: 100%;
   margin-bottom: 20px;
+  z-index: 100;
 }
 body #container #eightPage .section .carousel img {
   width: 100%;
@@ -953,13 +963,6 @@ body #container #tenPage .section .row:nth-child(2) iframe {
     font-weight: 900;
     font-size: 24px;
   }
-  body #container #navbar .section .navbarMenu {
-    display: none;
-  }
-  body #container #navbar .section .navbarMenu a {
-    text-decoration: none;
-    color: rgb(130, 105, 106);
-  }
   body #container #firstPage .firstPageText .col .text-1 {
     font-size: 6rem;
     letter-spacing: -2px;
@@ -1145,11 +1148,18 @@ body #container #tenPage .section .row:nth-child(2) iframe {
     display: none;
   }
   body #container #navbar .section .navbarMenu {
-    display: block;
     width: 70%;
+    position: static;
+    display: block;
+    text-align: right;
+  }
+  body #container #navbar .section .navbarMenu a {
+    display: inline;
+    background: none;
+    border: 0;
   }
   body #container #firstPage {
-    min-height: 98vh;
+    min-height: 100vh;
     background-attachment: fixed;
   }
   body #container #secondPage .section {
@@ -1351,4 +1361,11 @@ body #container #tenPage .section .row:nth-child(2) iframe {
   body #container #tenPage .section .row:nth-child(2) {
     width: calc(50% - 10px);
   }
+}
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
 }
